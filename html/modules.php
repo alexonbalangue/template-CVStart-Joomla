@@ -44,7 +44,7 @@ function modChrome_bs3withtitlehead($module, &$params, &$attribs)
 {
 	$moduleTag     = $params->get('module_tag', 'div');
 	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
-	$moduleClass   = $bootstrapSize != 0 ? 'col-sx-12 col-sm-12 col-md-' . $bootstrapSize . ' col-lg-' . $bootstrapSize : '';
+	$moduleClass   = $bootstrapSize != 0 ? 'col-xs-12 col-sm-12 col-md-' . $bootstrapSize . ' col-lg-' . $bootstrapSize : '';
 	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
 	$headerClass   = htmlspecialchars($params->get('header_class', 'text-center'));
 
@@ -65,7 +65,7 @@ function modChrome_bs3frontendshowNocolor($module, &$params, &$attribs)
 {
 	$moduleTag     = $params->get('module_tag', 'div');
 	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
-	$moduleClass   = $bootstrapSize != 0 ? 'col-sx-' . $bootstrapSize . ' col-sm-' . $bootstrapSize . ' col-md-' . $bootstrapSize . ' col-lg-' . $bootstrapSize : '';
+	$moduleClass   = $bootstrapSize != 0 ? 'col-xs-' . $bootstrapSize . ' col-sm-' . $bootstrapSize . ' col-md-' . $bootstrapSize . ' col-lg-' . $bootstrapSize : '';
 	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
 	$headerClass   = htmlspecialchars($params->get('header_class', 'text-center'));
 
@@ -86,7 +86,7 @@ function modChrome_bs3frontendshowYescolor($module, &$params, &$attribs)
 {
 	$moduleTag     = $params->get('module_tag', 'div');
 	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
-	$moduleClass   = $bootstrapSize != 0 ? 'col-sx-' . $bootstrapSize . ' col-sm-' . $bootstrapSize . ' col-md-' . $bootstrapSize . ' col-lg-' . $bootstrapSize : '';
+	$moduleClass   = $bootstrapSize != 0 ? 'col-xs-' . $bootstrapSize . ' col-sm-' . $bootstrapSize . ' col-md-' . $bootstrapSize . ' col-lg-' . $bootstrapSize : '';
 	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
 	$headerClass   = htmlspecialchars($params->get('header_class', 'text-center'));
 
@@ -107,7 +107,7 @@ function modChrome_bs3FooterShow($module, &$params, &$attribs)
 {
 	$moduleTag     = $params->get('module_tag', 'div');
 	$bootstrapSize = (int) $params->get('bootstrap_size', 0);
-	$moduleClass   = $bootstrapSize != 0 ? 'col-sx-12 col-sm-6 col-md-' . $bootstrapSize . ' col-lg-' . $bootstrapSize : '';
+	$moduleClass   = $bootstrapSize != 0 ? 'col-xs-12 col-sm-6 col-md-' . $bootstrapSize . ' col-lg-' . $bootstrapSize : '';
 	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
 	$headerClass   = htmlspecialchars($params->get('header_class', 'text-center'));
 

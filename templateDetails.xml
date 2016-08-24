@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.5" type="template" client="site" method="upgrade">
 	<name>cvstart</name>
-	<version>1.6.4</version>
-	<creationDate>April, 26th 2016</creationDate>
+	<version>1.6.5</version>
+	<creationDate>August, 24th 2016</creationDate>
 	<author>Alexon Balangue</author>
 	<authorUrl>www.alexonbalangue.me</authorUrl>
 	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
@@ -30,8 +30,8 @@
 		<position>bs2-translator</position>
 		<position>bs2-breadcrumb</position>
 		<position>bs2-translator</position>
-		<position>bs2-login</position>
-		<position>bs2-subscribe</position>
+		<position>bs2-login-left</position>
+		<position>bs2-login-right</position>
 		<position>bs2-contact</position>
 		<position>bs2-payment</position>
 		<position>bs2-footer1</position>
@@ -137,12 +137,8 @@
 						<option value="boostrap2-component">Boostrap V2.3.2 (Component)</option>
 						<option value="boostrap3-home">Boostrap V3.3.6 (Home)</option>
 						<option value="boostrap3-component">Boostrap V3.3.6 (Component)</option>
-						<option value="amp-home">AMP (Home)</option>
-						<option value="amp-component">AMP (Component)</option>
-						<option value="foundation-home">Foundation (Home)</option>
-						<option value="foundation-component">Foundation (Component)</option>
-						<option value="metroui-home">MetroUI (Home)</option>
-						<option value="metroui-component">MetroUI (Component)</option>
+						<!--<option value="amp-home">AMP (Home)Pending</option>
+						<option value="amp-component">AMP (Component)Pending</option>-->
 				</field>
 				<field name="groups-script"
 					type="list"
@@ -150,10 +146,8 @@
 					label="TPL_CVSTART_METHODSCRIPT_LABEL"
 					description="TPL_CVSTART_METHODSCRIPT_DESC">
 						<option value="boostrap2">Boostrap V2.3.2</option>
-						<option value="boostrap3">Boostrap V3.3.6</option>
-						<option value="amp">AMP</option>
-						<option value="foundation">Foundation</option>
-						<option value="metroui">MetroUI</option>
+						<option value="boostrap3">Boostrap V3.3.x</option>
+						<option value="amp">AMP-HTML+Boostrap3</option>
 				</field>
 				<field name="groups-method"
 					type="list"
@@ -179,7 +173,7 @@
 				<field name="Pages-js-default"
 					type="radio"
 					class="btn-group btn-group-yesno"
-					default="home"
+					default=""
 					label="TPL_CVSTART_HIDEJSDEFAULT_LABEL"
 					description="TPL_CVSTART_HIDEJSDEFAULT_DESC">
 						<option value="">Keep default</option>
@@ -218,6 +212,7 @@
 			</fieldset>
 		</fields>
 	</config>
+
 	<updateservers>
 		<server type="collection" priority="1" name="Accredited by Alexon Balangue">https://jupdates.alexonbalangue.me/update/joomla/general.xml</server>
 		<server type="extension" priority="2" name="TPL - cvstart">https://jupdates.alexonbalangue.me/update/joomla/xml/tpl_cvstart.xml</server>

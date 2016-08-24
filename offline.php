@@ -12,6 +12,8 @@ defined('_JEXEC') or die;
 $apps             = JFactory::getApplication();
 $docs             = JFactory::getDocument();
 $sitename = $apps->get('sitename');
+$this->language  = $docs->language;
+$this->direction = $docs->direction;
 
 $this->_script = $this->_scripts = array();	
 
@@ -30,7 +32,7 @@ require_once JPATH_ADMINISTRATOR . '/components/com_users/helpers/users.php';
 $twofactormethods = UsersHelper::getTwoFactorMethods();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html <?php echo $params->get('ampHTML'); ?> lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 [head]
 	[meta charset="utf-8" /]
 	[title]<?php echo $sitename.' - '.JText::_('JOFFLINE_MESSAGE'); ?>[/title]
@@ -41,8 +43,8 @@ $twofactormethods = UsersHelper::getTwoFactorMethods();
 		[link rel="stylesheet" href="<?php echo $this->baseurl; ?>/media/cms/css/debug.css" type="text/css" /]
 	<?php endif; ?>
 	[link rel="shortcut icon" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/favicon.ico" type="image/vnd.microsoft.icon" /]
-	[link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" /]
-	[link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css" /]
+	[link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" /]
+	[link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" /]
 	[link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/assets/production/boostrap3-full.min.css" type="text/css" /]
 	<!--<if lt IE 9>
 		[script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js" /]
@@ -126,7 +128,7 @@ $twofactormethods = UsersHelper::getTwoFactorMethods();
         [ends tags="div" /]  
     [/footer]
 		[script src="https://code.jquery.com/jquery-1.12.3.min.js" /] 
-		[script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" /] 
+		[script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" /] 
 		[script src="<?php echo $this->baseurl; ?>/assets/production/boostrap3-full.min.js" /] 
 	[ends tags="body" /]  
 </html>
