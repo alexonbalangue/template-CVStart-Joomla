@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.6" type="template" client="site" method="upgrade">
 	<name>cvstart</name>
-	<version>1.6.6</version>
-	<creationDate>September, 15th 2016</creationDate>
+	<version>1.6.7</version>
+	<creationDate>November, 27th 2016</creationDate>
 	<author>Alexon Balangue</author>
 	<authorUrl>www.alexonbalangue.me</authorUrl>
 	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
@@ -136,8 +136,8 @@
 						<option value="">Neutral (without design)</option>
 						<option value="boostrap2-home">Boostrap V2.3.2 (Home)</option>
 						<option value="boostrap2-component">Boostrap V2.3.2 (Component)</option>
-						<option value="boostrap3-home">Boostrap V3.3.6 (Home)</option>
-						<option value="boostrap3-component">Boostrap V3.3.6 (Component)</option>
+						<option value="boostrap3-home">Boostrap V3.3.7 (Home)</option>
+						<option value="boostrap3-component">Boostrap V3.3.7 (Component)</option>
 						<!--<option value="amp-home">AMP (Home)Pending</option>
 						<option value="amp-component">AMP (Component)Pending</option>-->
 				</field>

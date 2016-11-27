@@ -70,21 +70,33 @@ endswitch;
 
 # Adjusting content width
 if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right')){
-	$boostrap2_sizes = "span6";
-	$boostrap3_sizes = "col-xs-12 col-sm-6 col-md-6 col-lg-6";
-	$amp_sizes = "col-xs-12 col-sm-6 col-md-6 col-lg-6";
+	$boostrap2_sizes_left = "span3";
+	$boostrap2_sizes_body = "span6";
+	$boostrap2_sizes_right = "span3";
+	$boostrap3_sizes_left = "col-xs-12 col-md-3";
+	$boostrap3_sizes_body = "col-xs-12 col-md-6";
+	$boostrap3_sizes_right = "col-xs-12 col-md-3";
 } elseif ($this->countModules('sidebar-left') && !$this->countModules('sidebar-right')){
-	$boostrap2_sizes = "span9";
-	$boostrap3_sizes = "col-xs-12 col-sm-9 col-md-9 col-lg-9";
-	$amp_sizes = "col-xs-12 col-sm-9 col-md-9 col-lg-9";
+	$boostrap2_sizes_left = "span4";
+	$boostrap2_sizes_body = "span9";
+	$boostrap2_sizes_right = "";
+	$boostrap3_sizes_left = "col-xs-12 col-md-4";
+	$boostrap3_sizes_body = "col-xs-12 col-md-9";
+	$boostrap3_sizes_right = "";
 } elseif (!$this->countModules('sidebar-left') && $this->countModules('sidebar-right')){
-	$boostrap2_sizes = "span9";
-	$boostrap3_sizes = "col-xs-12 col-sm-9 col-md-9 col-lg-9";
-	$amp_sizes = "col-xs-12 col-sm-9 col-md-9 col-lg-9";
+	$boostrap2_sizes_left = "";
+	$boostrap2_sizes_body = "span9";
+	$boostrap2_sizes_right = "span4";
+	$boostrap3_sizes_left = "";
+	$boostrap3_sizes_body = "col-xs-12 col-md-9";
+	$boostrap3_sizes_right = "col-xs-12 col-md-4";
 } else {
-	$boostrap2_sizes = "span12";
-	$boostrap3_sizes = "col-xs-12 col-sm-12 col-md-12 col-lg-12";
-	$amp_sizes = "col-xs-12 col-sm-12 col-md-12 col-lg-12";
+	$boostrap2_sizes_left = "";
+	$boostrap2_sizes_body = "span12";
+	$boostrap2_sizes_right = "";
+	$boostrap3_sizes_left = "";
+	$boostrap3_sizes_body = "col-xs-12 col-md-12";
+	$boostrap3_sizes_right = "";
 }
 
 // Logo file or site title param logoFile
@@ -404,17 +416,17 @@ if( $browser->isMobile() == true ){
 				[begins tags="div" class="container-fluid" /]  
 					[begins tags="div" class="row-fluid" /]
 						<?php if ($this->countModules('sidebar-left')) : ?>
-						[begins tags="div" class="<?php echo $boostrap2_sizes; ?>" /]
+						[begins tags="div" class="<?php echo $boostrap2_sizes_left; ?>" /]
 							<jdoc:include type="modules" name="sidebar-left" style="nones" />
 						[ends tags="div" /] 
 						<?php endif; ?>
-						[begins tags="div" class="<?php echo $boostrap2_sizes; ?>" /]
+						[begins tags="div" class="<?php echo $boostrap2_sizes_body; ?>" /]
 							<jdoc:include type="message" />
 							<jdoc:include type="component" />
 							<jdoc:include type="modules" name="bs2-breadcrumb" style="nones" />
 						[ends tags="div" /] 
 						<?php if ($this->countModules('sidebar-right')) : ?>
-						[begins tags="div" class="<?php echo $boostrap2_sizes; ?>" /]
+						[begins tags="div" class="<?php echo $boostrap2_sizes_right; ?>" /]
 							<jdoc:include type="modules" name="sidebar-right" style="nones" />
 						[ends tags="div" /] 
 						<?php endif; ?>
@@ -796,17 +808,17 @@ if( $browser->isMobile() == true ){
 				[begins tags="div" class="container-fluid" /]  
 					[begins tags="div" class="row" /]
 						<?php if ($this->countModules('sidebar-left')) : ?>
-						[begins tags="div" class="<?php echo $boostrap3_sizes; ?>" /]
+						[begins tags="div" class="<?php echo $boostrap3_sizes_left; ?>" /]
 							<jdoc:include type="modules" name="sidebar-left" style="nones" />
 						[ends tags="div" /] 
 						<?php endif; ?>
-						[begins tags="div" class="<?php echo $boostrap3_sizes; ?>" /]
+						[begins tags="div" class="<?php echo $boostrap3_sizes_body; ?>" /]
 							<jdoc:include type="message" />
 							<jdoc:include type="component" />
 							<jdoc:include type="modules" name="bs3-breadcrumb" style="nones" />
 						[ends tags="div" /] 
 						<?php if ($this->countModules('sidebar-right')) : ?>
-						[begins tags="div" class="<?php echo $boostrap3_sizes; ?>" /]
+						[begins tags="div" class="<?php echo $boostrap3_sizes_right; ?>" /]
 							<jdoc:include type="modules" name="sidebar-right" style="nones" />
 						[ends tags="div" /] 
 						<?php endif; ?>
@@ -938,8 +950,8 @@ if( $browser->isMobile() == true ){
 		<?php endif; ?>	
 	
 
-<?php /********[ LAWS EUROPEAN - obligation show cookie legal ]*******/ ?>
-		[cookies legal="<?php echo JText::_('TPL_CVSTART_COOKIESEU_HOME'); ?>" botton="Ok" url="//www.alexonbalangue.me/information/mention-legal.html" /] 	
+<?php /********[ LAWS EUROPEAN - obligation show cookie legal ]
+		[cookies legal="echo JText::_('TPL_CVSTART_COOKIESEU_HOME')" botton="Ok" url="//www.alexonbalangue.me/information/mention-legal.html" /] 	*******/ ?>
 		<jdoc:include type="modules" name="debug" style="none" />	
 
 	[ends tags="body" /]  
