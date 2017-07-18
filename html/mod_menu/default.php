@@ -13,10 +13,8 @@ defined('_JEXEC') or die;
 // Note. It is important to remove spaces between elements.
 ?>
 <?php // The menu class is deprecated. Use nav instead. ?>
-<ul class="nav navbar-nav navbar-right">
-     <li class="hidden">
-         <a href="#page-top"></a>
-     </li>
+<ul class="navbar-nav ml-auto">
+
 <?php
 foreach ($list as $i => &$item)
 {
@@ -65,7 +63,7 @@ foreach ($list as $i => &$item)
 		$class = ' class="' . trim($class) . '"';
 	}
 
-	echo '<li class="page-scroll">';
+	echo '<li class="nav-item">';
 
 	// Render the menu item.
 	switch ($item->type) :
@@ -84,7 +82,7 @@ foreach ($list as $i => &$item)
 	// The next item is deeper.
 	if ($item->deeper)
 	{
-		echo '<ul class="nav navbar-nav navbar-right">';
+		echo '<ul class="navbar-nav ml-auto">';
 	}
 	elseif ($item->shallower)
 	{

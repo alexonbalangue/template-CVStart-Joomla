@@ -3,7 +3,7 @@
  * @package     Joomla.Site
  * @subpackage  mod_tags_popular
  *
- * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -14,10 +14,10 @@ $maxsize = $params->get('maxsize', 2);
 
 JLoader::register('TagsHelperRoute', JPATH_BASE . '/components/com_tags/helpers/route.php');
 ?>
-
+<div class="<?php echo $moduleclass_sfx; ?>">
 <?php
 if (!count($list)) : ?>
-	<div class="alert alert-no-items"><?php echo JText::_('MOD_TAGS_POPULAR_NO_ITEMS_FOUND'); ?></div>
+	<div class="alert alert-warning"><?php echo JText::_('MOD_TAGS_POPULAR_NO_ITEMS_FOUND'); ?></div>
 <?php else :
 	// Find maximum and minimum count
 	$mincount = null;
@@ -42,7 +42,11 @@ if (!count($list)) : ?>
 			$fontsize = $minsize + (($maxsize - $minsize) / ($countdiff)) * ($item->count - $mincount);
 		endif;
 ?>
-
-			<a href="<?php echo JRoute::_(TagsHelperRoute::getTagRoute($item->tag_id . ':' . $item->alias)); ?>"><?php echo htmlspecialchars($item->title); ?></a><?php if ($display_count) : ?>(<?php echo $item->count; ?>)<?php endif; ?> - 
+			<a style="font-size: <?php echo $fontsize . 'em'; ?>" href="<?php echo JRoute::_(TagsHelperRoute::getTagRoute($item->tag_id . '-' . $item->alias)); ?>">
+				<?php echo htmlspecialchars($item->title, ENT_COMPAT, 'UTF-8'); ?></a>
+			<?php if ($display_count) : ?>
+				<span class="badge"><?php echo $item->count; ?></span>
+			<?php endif; ?> &nbsp;
 	<?php endforeach; ?>
 <?php endif; ?>
+</div>
