@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.6" type="template" client="site" method="upgrade">
+<extension version="3.7" type="template" client="site" method="upgrade">
 	<name>cvstart</name>
-	<version>1.6.7</version>
-	<creationDate>November, 27th 2016</creationDate>
+	<version>1.6.8</version>
+	<creationDate>Jully, 18th 2017</creationDate>
 	<author>Alexon Balangue</author>
 	<authorUrl>www.alexonbalangue.me</authorUrl>
 	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
@@ -48,7 +48,8 @@
 		<position>bs3-translator</position>
 		<position>bs3-breadcrumb</position>
 		<position>bs3-translator</position>
-		<position>bs3-login</position>
+		<position>bs3-login-right</position>
+		<position>bs3-login-left</position>
 		<position>bs3-subscribe</position>
 		<position>bs3-contact</position>
 		<position>bs3-payment</position>
@@ -56,6 +57,25 @@
 		<position>bs3-footer2</position>
 		<position>bs3-footer3</position>
 		<position>bs3-footer4</position>
+
+	<!-- Boostrap4 - home -->
+		<position>bs4-portfolio</position>
+		<position>bs4-information</position>
+		<position>bs4-download</position>
+		<position>bs4-project</position>
+		<position>bs4-boutique</position>
+		<position>bs4-translator</position>
+		<position>bs4-breadcrumb</position>
+		<position>bs4-translator</position>
+		<position>bs4-login-right</position>
+		<position>bs4-login-left</position>
+		<position>bs4-subscribe</position>
+		<position>bs4-contact</position>
+		<position>bs4-payment</position>
+		<position>bs4-footer1</position>
+		<position>bs4-footer2</position>
+		<position>bs4-footer4</position>
+		<position>bs4-footer4</position>
 	<!-- amp - home -->
 		<position>amp-portfolio</position>
 		<position>amp-information</position>
@@ -138,6 +158,8 @@
 						<option value="boostrap2-component">Boostrap V2.3.2 (Component)</option>
 						<option value="boostrap3-home">Boostrap V3.3.7 (Home)</option>
 						<option value="boostrap3-component">Boostrap V3.3.7 (Component)</option>
+						<option value="boostrap4-home">Boostrap V4 alpha6 (Home)</option>
+						<option value="boostrap4-component">Boostrap V4 alpha6 (Component)</option>
 						<!--<option value="amp-home">AMP (Home)Pending</option>
 						<option value="amp-component">AMP (Component)Pending</option>-->
 				</field>
@@ -148,6 +170,7 @@
 					description="TPL_CVSTART_METHODSCRIPT_DESC">
 						<option value="boostrap2">Boostrap V2.3.2</option>
 						<option value="boostrap3">Boostrap V3.3.x</option>
+						<option value="boostrap4">Boostrap V4 alpha6</option>
 						<option value="amp">AMP-HTML+Boostrap3</option>
 				</field>
 				<field name="groups-method"

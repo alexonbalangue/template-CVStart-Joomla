@@ -18,11 +18,7 @@ $this->direction = $docs->direction;
 // Getting params from template
 $params = $apps->getTemplate(true)->params;
 $sitename = $apps->get('sitename');
-# If you use Analyrics intern - Piwik | With plugin https://www.yireo.com/software/joomla-extensions/piwik
-#include_once JPATH_SITE . '/plugins/system/piwik/piwik.php';
-#if (class_exists('PlgSystemPiwik')) {
-#    PlgSystemPiwik::callPiwik();
-#}
+
 ?>
 <!DOCTYPE html>
 <html <?php echo $params->get('ampHTML'); ?> lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
