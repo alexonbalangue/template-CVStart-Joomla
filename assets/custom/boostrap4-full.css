@@ -6,7 +6,15 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden; }
-
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
 p {
   font-size: 20px; }
 
@@ -18,7 +26,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #2c3e50;
+  color: #0275d8;
   outline: none; }
 
 h1,
