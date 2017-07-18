@@ -32,7 +32,7 @@ require_once JPATH_ADMINISTRATOR . '/components/com_users/helpers/users.php';
 $twofactormethods = UsersHelper::getTwoFactorMethods();
 ?>
 <!DOCTYPE html>
-<html <?php echo $params->get('ampHTML'); ?> lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
+<html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 [head]
 	[meta charset="utf-8" /]
 	[title]<?php echo $sitename.' - '.JText::_('JOFFLINE_MESSAGE'); ?>[/title]
@@ -43,17 +43,17 @@ $twofactormethods = UsersHelper::getTwoFactorMethods();
 		[link rel="stylesheet" href="<?php echo $this->baseurl; ?>/media/cms/css/debug.css" type="text/css" /]
 	<?php endif; ?>
 	[link rel="shortcut icon" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/favicon.ico" type="image/vnd.microsoft.icon" /]
-	[link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" /]
-	[link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" /]
-	[link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/assets/production/boostrap3-full.min.css" type="text/css" /]
+	[link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" type="text/css" /]
+	[link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" /]
+	[link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/assets/production/boostrap4-full.min.css" type="text/css" /]
 	<!--<if lt IE 9>
-		[script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js" /]
-		[script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" /]
+		[script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" /]
+		[script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" /]
 	<!<endif>-->
 [/head]
 [begins tags="body" mdatatype="http://schema.org/WebPage" /]
 <jdoc:include type="message" />
-		[header]
+		[header class="masthead"]
 			[begins tags="div" class="container" /]
 				[begins tags="div" class="row" /]
 					[begins tags="div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" /]
@@ -81,7 +81,7 @@ $twofactormethods = UsersHelper::getTwoFactorMethods();
         [begins tags="div" class="container" /]  
             [begins tags="div" class="row" /]  
                 [begins tags="div" class="col-lg-12 text-center" /]  
-                    [h2 itemprop="alternativeHealine"]Sorry, Member team login only[/h2]
+                    [h2 itemprop="alternativeHealine"]Sorry, admin login only[/h2]
                     [hr class="star-primary" /]
             [ends tags="div" /]  
             [begins tags="div" class="row" /]  
@@ -127,8 +127,9 @@ $twofactormethods = UsersHelper::getTwoFactorMethods();
 			[ends tags="div" /]  
         [ends tags="div" /]  
     [/footer]
-		[script src="https://code.jquery.com/jquery-1.12.3.min.js" /] 
-		[script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" /] 
-		[script src="<?php echo $this->baseurl; ?>/assets/production/boostrap3-full.min.js" /] 
+		[script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" /] 
+		[script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" /] 
+		[script src="<?php echo $this->baseurl; ?>/assets/production/boostrap4-full.min.js" /] 
+		[script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" /] 
 	[ends tags="body" /]  
 </html>
