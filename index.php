@@ -943,6 +943,7 @@ if( $browser->isMobile() == true ){
 			[url class="btn btn-primary" href="#page-top"][fa name="chevron-up" /][/url]
 		[ends tags="div" /]
 	<?php break; case 'boostrap4-home': ?>
+	[begins tags='body' id='page-top' class='index' mdatatype='http://schema.org/WebPage' /]
 	[nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"]
 		[begins tags='button' class='navbar-toggler navbar-toggler-right' more='type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"' /]
             Menu [fa name='bars' /]
@@ -984,7 +985,7 @@ if( $browser->isMobile() == true ){
 					[ends tags="div" /]
 				[ends tags="div" /]
 			[/header]
-		<?php if ($this->countModules('bs3-information')): ?>
+		<?php if ($this->countModules('bs4-information')): ?>
 			[section id="information"]
 				[begins tags='div' class='containe' /]
 					[begins tags='div' class='row' /]
@@ -995,12 +996,12 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-information" style="none" />
+						<jdoc:include type="modules" name="bs4-information" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
 		<?php endif; ?>	        
-		<?php if ($this->countModules('bs3-portfolio')) : ?>
+		<?php if ($this->countModules('bs4-portfolio')) : ?>
 			[section class="success" id="portfolios"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
@@ -1010,12 +1011,12 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-portfolio" style="none" />
+						<jdoc:include type="modules" name="bs4-portfolio" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
 		<?php endif; ?>	          
-		<?php if ($this->countModules('bs3-download')) : ?>
+		<?php if ($this->countModules('bs4-download')) : ?>
 			[section id="download"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
@@ -1025,12 +1026,12 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-download" style="none" />
+						<jdoc:include type="modules" name="bs4-download" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
 		<?php endif; ?>	                    
-		<?php if ($this->countModules('bs3-project')) : ?>
+		<?php if ($this->countModules('bs4-project')) : ?>
 			[section id="project" class="success"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
@@ -1040,7 +1041,7 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-project" style="none" />
+						<jdoc:include type="modules" name="bs4-project" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
@@ -1054,11 +1055,11 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-translator" style="none" />
+						<jdoc:include type="modules" name="bs4-translator" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
-  		<?php if ($this->countModules('bs3-boutique')) : ?>
+  		<?php if ($this->countModules('bs4-boutique')) : ?>
 			[section class="success"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
@@ -1068,12 +1069,12 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-boutique" style="none" />
+						<jdoc:include type="modules" name="bs4-boutique" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
 		<?php endif; ?>	 
-		<?php if ($this->countModules('bs3-payment')) : ?>
+		<?php if ($this->countModules('bs4-payment')) : ?>
 			[section id="payment"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
@@ -1083,12 +1084,12 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-payment" style="none" />
+						<jdoc:include type="modules" name="bs4-payment" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
 		<?php endif; ?>	    
-		<?php if ($this->countModules('bs3-login-left') && $this->countModules('bs3-login-right')) : ?>
+		<?php if ($this->countModules('bs4-login-left') && $this->countModules('bs4-login-right')) : ?>
 			[section id="logs" class="success"]
 				[begins tags='div' class='container text-center' /]
 					[begins tags='div' class='row' /]
@@ -1098,13 +1099,13 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs3-login-left" style="none" />[ends tags="div" /]
-						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs3-login-right" style="none" />[ends tags="div" /]
+						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs4-login-left" style="none" />[ends tags="div" /]
+						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs4-login-right" style="none" />[ends tags="div" /]
 					[ends tags="div" /]
 				[ends tags="div" /]
 			[/section]	
 		<?php endif; ?>	   
-		<?php if ($this->countModules('bs3-contact')) : ?>
+		<?php if ($this->countModules('bs4-contact')) : ?>
 			[section id="contact"]
 				[begins tags='div' class='container-fluid' /]
 					[begins tags='div' class='row' /]
@@ -1114,7 +1115,7 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-contact" style="none" />
+						<jdoc:include type="modules" name="bs4-contact" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
@@ -1127,17 +1128,17 @@ if( $browser->isMobile() == true ){
 						  [hr class="clearfix" /]
 					[ends tags="div" /]
 					[begins tags='div' more='class="row"' /]
-						<?php if ($this->countModules('bs3-footer1')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs3-footer1" style="none" />[ends tags="div" /]
+						<?php if ($this->countModules('bs4-footer1')) : ?>
+							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer1" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
-						<?php if ($this->countModules('bs3-footer2')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs3-footer2" style="none" />[ends tags="div" /]
+						<?php if ($this->countModules('bs4-footer2')) : ?>
+							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer2" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
-						<?php if ($this->countModules('bs3-footer3')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs3-footer3" style="none" />[ends tags="div" /]
+						<?php if ($this->countModules('bs4-footer3')) : ?>
+							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer3" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
-						<?php if ($this->countModules('bs3-footer4')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs3-footer4" style="none" />[ends tags="div" /]
+						<?php if ($this->countModules('bs4-footer4')) : ?>
+							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer4" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 					[ends tags="div" /]
 				[ends tags="div" /]
@@ -1161,6 +1162,7 @@ if( $browser->isMobile() == true ){
 			[url class="btn btn-primary page-scroll" href="#page-top"][fa name="chevron-up" /][/url]
 		[ends tags="div" /]
 	<?php break; case 'boostrap4-component': ?>
+	[begins tags='body' id='page-top' class='index' mdatatype='http://schema.org/WebPage' /]
 	[nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"]
 		[begins tags='button' class='navbar-toggler navbar-toggler-right' more='type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"' /]
             Menu [fa name='bars' /]
@@ -1213,7 +1215,7 @@ if( $browser->isMobile() == true ){
 						[begins tags="div" class="<?php echo $boostrap4_sizes_body; ?>" /]
 							<jdoc:include type="message" />
 							<jdoc:include type="component" />
-							<jdoc:include type="modules" name="bs3-breadcrumb" style="nones" />
+							<jdoc:include type="modules" name="bs4-breadcrumb" style="nones" />
 						[ends tags="div" /] 
 						<?php if ($this->countModules('sidebar-right')) : ?>
 						[begins tags="div" class="<?php echo $boostrap4_sizes_right; ?>" /]
@@ -1223,7 +1225,7 @@ if( $browser->isMobile() == true ){
 					[ends tags="div" /] 
 				[ends tags="div" /] 
 			[/section]	                            
-		<?php if ($this->countModules('bs3-translator')) : ?>
+		<?php if ($this->countModules('bs4-translator')) : ?>
 			[section id="translator" class="success"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
@@ -1234,12 +1236,12 @@ if( $browser->isMobile() == true ){
 					[ends tags="div" /] 
 					[begins tags="div" class="row" /] 
 						
-						<jdoc:include type="modules" name="bs3-translator" style="none" />
+						<jdoc:include type="modules" name="bs4-translator" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /] 
 			[/section]	
 		<?php endif; ?>	                
-		<?php if ($this->countModules('bs3-login-left') && $this->countModules('bs3-login-right')) : ?>
+		<?php if ($this->countModules('bs4-login-left') && $this->countModules('bs4-login-right')) : ?>
 			[section id="logs"]
 				[begins tags='div' class='container text-center' /]
 					[begins tags='div' class='row' /]
@@ -1249,13 +1251,13 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs3-login-left" style="none" />[ends tags="div" /]
-						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs3-login-right" style="none" />[ends tags="div" /]
+						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs4-login-left" style="none" />[ends tags="div" /]
+						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs4-login-right" style="none" />[ends tags="div" /]
 					[ends tags="div" /]
 				[ends tags="div" /]
 			[/section]	
 		<?php endif; ?>	     
-		<?php if ($this->countModules('bs3-payment')) : ?>
+		<?php if ($this->countModules('bs4-payment')) : ?>
 			[section id="payment" class="success"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
@@ -1265,12 +1267,12 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]
 					[ends tags="div" /] 
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-payment" style="none" />
+						<jdoc:include type="modules" name="bs4-payment" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
 		<?php endif; ?>	    
-		<?php if ($this->countModules('bs3-contact')) : ?>
+		<?php if ($this->countModules('bs4-contact')) : ?>
 			[section id="contact"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
@@ -1280,7 +1282,7 @@ if( $browser->isMobile() == true ){
 						[ends tags="div" /]	
 					[ends tags="div" /]	
 					[begins tags="div" class="row" /] 
-						<jdoc:include type="modules" name="bs3-contact" style="none" />
+						<jdoc:include type="modules" name="bs4-contact" style="none" />
 					[ends tags="div" /] 
 				[ends tags="div" /]
 			[/section]	
@@ -1293,17 +1295,17 @@ if( $browser->isMobile() == true ){
 						  [hr /]
 					[ends tags="div" /]
 					[begins tags='div' more='class="row"' /]
-						<?php if ($this->countModules('bs3-footer1')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs3-footer1" style="none" />[ends tags="div" /]
+						<?php if ($this->countModules('bs4-footer1')) : ?>
+							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer1" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
-						<?php if ($this->countModules('bs3-footer2')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs3-footer2" style="none" />[ends tags="div" /]
+						<?php if ($this->countModules('bs4-footer2')) : ?>
+							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer2" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
-						<?php if ($this->countModules('bs3-footer3')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs3-footer3" style="none" />[ends tags="div" /]
+						<?php if ($this->countModules('bs4-footer3')) : ?>
+							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer3" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
-						<?php if ($this->countModules('bs3-footer4')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs3-footer4" style="none" />[ends tags="div" /]
+						<?php if ($this->countModules('bs4-footer4')) : ?>
+							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer4" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 					[ends tags="div" /]
 				[ends tags="div" /]
