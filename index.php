@@ -129,8 +129,9 @@ elseif ($Params_grpsJs == 'custom') :
 endif;
 
 
-$docs->addStyleSheet('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-//$docs->addStyleSheet('//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+$docs->addStyleSheet('https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet');
+$docs->addStyleSheet('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet');
+
 
 
 require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'html'.DIRECTORY_SEPARATOR.'renderer'.DIRECTORY_SEPARATOR.'head.php';
@@ -944,13 +945,15 @@ if( $browser->isMobile() == true ){
 		[ends tags="div" /]
 	<?php break; case 'boostrap4-home': ?>
 	[begins tags='body' id='page-top' class='index' mdatatype='http://schema.org/WebPage' /]
-	[nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"]
-		[begins tags='button' class='navbar-toggler navbar-toggler-right' more='type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"' /]
-            Menu [fa name='bars' /]
-        [ends tags='button' /]
-        [begins tags='div' class='container' /]
-            [a class="navbar-brand" href="#page-top" mdataprop="name"]<?php echo $sitename; ?>[/a]
-				[begins tags="div" class="collapse navbar-collapse" id="navbarMenu" /]
+	
+		[nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-inverse"]
+					[begins tags='button' class='navbar-toggler navbar-toggler-right' more='type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation"' /]
+						Menu [fa name='bars' /]
+					[ends tags='button' /]
+				
+			[begins tags='div' class='container' /]
+					[a class="navbar-brand" href="#page-top" mdataprop="name"]<?php echo $sitename; ?>[/a]
+				[begins tags="div" class="collapse navbar-collapse" id="navbarExample" /]
 					<?php if ($this->countModules('cvstart_menu')) : ?>
 						<jdoc:include type="modules" name="cvstart_menu" style="none" />
 					<?php endif; ?>			
@@ -958,7 +961,7 @@ if( $browser->isMobile() == true ){
 			[ends tags="div" /]
 		[/nav]
 			[header class="masthead"]
-				[begins tags='div' class='container-fluid' /]
+				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
 						[begins tags="div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" mdatatype"http://schema.org/CreativeWork" /]
 							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue img-circle" /]
@@ -1164,12 +1167,13 @@ if( $browser->isMobile() == true ){
 	<?php break; case 'boostrap4-component': ?>
 	[begins tags='body' id='page-top' class='index' mdatatype='http://schema.org/WebPage' /]
 	[nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"]
-		[begins tags='button' class='navbar-toggler navbar-toggler-right' more='type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"' /]
-            Menu [fa name='bars' /]
-        [ends tags='button' /]
-        [begins tags='div' class='container' /]
-            [a class="navbar-brand" href="#page-top" mdataprop="name"]<?php echo $sitename; ?>[/a]
-				[begins tags="div" class="collapse navbar-collapse" id="navbarMenu" /]
+		[nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-inverse"]
+			[begins tags='div' class='container' /]
+					[begins tags='button' class='navbar-toggler navbar-toggler-right' more='type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation"' /]
+						Menu [fa name='bars' /]
+					[ends tags='button' /]
+					[a class="navbar-brand" href="#page-top" mdataprop="name"]<?php echo $sitename; ?>[/a]
+				[begins tags="div" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" /]
 					<?php if ($this->countModules('cvstart_menu')) : ?>
 						<jdoc:include type="modules" name="cvstart_menu" style="none" />
 					<?php endif; ?>			
@@ -1177,7 +1181,7 @@ if( $browser->isMobile() == true ){
 			[ends tags="div" /]
 		[/nav]
 			[header class="masthead"]
-				[begins tags='div' class='container-fluid' /]
+				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
 						[begins tags="div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" mdatatype"http://schema.org/CreativeWork" /]
 							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue img-circle" /]

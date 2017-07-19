@@ -14,6 +14,9 @@ body {
         nav > .container {
             width: 100%;
         }
+        nav > .container-fluid {
+            width: 100%;
+        }
     }
 p {
   font-size: 20px; }
