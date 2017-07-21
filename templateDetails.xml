@@ -2,11 +2,11 @@
 <extension version="3.7" type="template" client="site" method="upgrade">
 	<name>cvstart</name>
 	<version>1.6.8</version>
-	<creationDate>Jully, 18th 2017</creationDate>
+	<creationDate>Jully, 20th 2017</creationDate>
 	<author>Alexon Balangue</author>
 	<authorUrl>www.alexonbalangue.me</authorUrl>
 	<authorEmail>moi.sites@alexonbalangue.me</authorEmail>
-	<copyright>Copyright (C) 2016 Alexon Balangue. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2016-2017 Alexon Balangue. All rights reserved.</copyright>
 	<description>TPL_CVSTART_XML_DESCRIPTION</description>
 	<files>
 		<filename>component.php</filename>
@@ -19,6 +19,7 @@
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<folder>assets</folder>
+		<folder>image</folder>
 		<folder>html</folder>
 		<folder>language</folder>
 	</files>

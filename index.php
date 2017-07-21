@@ -175,7 +175,7 @@ if( $browser->isMobile() == true ){
 				[begins tags='div' class='container-fluid' /]
 					[begins tags='div' class='row-fluid' /]
 						[begins tags="div" class="span12" mdatatype"http://schema.org/CreativeWork" /]
-							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue img-circle" /]
+							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue rounded-circle" /]
 									<meta itemprop="image" content="<?php echo $mypersonal_photo; ?>">
 							[begins tags='div' more='class="intro-text"' /]
 								[begins tags='h1' class='name' mdataprop='author']
@@ -401,7 +401,7 @@ if( $browser->isMobile() == true ){
 				[begins tags='div' class='container-fluid' /]
 					[begins tags='div' class='row-fluid' /]
 						[begins tags="div" class="span12" mdatatype"http://schema.org/CreativeWork" /]
-							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue img-circle" /]
+							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue rounded-circle" /]
 									<meta itemprop="image" content="<?php echo $mypersonal_photo; ?>">
 							[begins tags='div' more='class="intro-text"' /]
 								[begins tags='h1' class='name' mdataprop='author']
@@ -570,7 +570,7 @@ if( $browser->isMobile() == true ){
 				[begins tags='div' class='container-fluid' /]
 					[begins tags='div' class='row' /]
 						[begins tags="div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" mdatatype"http://schema.org/CreativeWork" /]
-							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue img-circle" /]
+							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue rounded-circle" /]
 									<meta itemprop="image" content="<?php echo $mypersonal_photo; ?>">
 							[begins tags='div' more='class="intro-text"' /]
 								[begins tags='h1' class='name' mdataprop='author']
@@ -794,7 +794,7 @@ if( $browser->isMobile() == true ){
 				[begins tags='div' class='container-fluid' /]
 					[begins tags='div' class='row' /]
 						[begins tags="div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" mdatatype"http://schema.org/CreativeWork" /]
-							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue img-circle" /]
+							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue rounded-circle" /]
 									<meta itemprop="image" content="<?php echo $mypersonal_photo; ?>">
 							[begins tags='div' more='class="intro-text"' /]
 								[begins tags='h1' class='name' mdataprop='author']
@@ -946,12 +946,12 @@ if( $browser->isMobile() == true ){
 	<?php break; case 'boostrap4-home': ?>
 	[begins tags='body' id='page-top' class='index' mdatatype='http://schema.org/WebPage' /]
 	
-		[nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-inverse"]
+		[nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"]
 					[begins tags='button' class='navbar-toggler navbar-toggler-right' more='type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation"' /]
 						Menu [fa name='bars' /]
 					[ends tags='button' /]
 				
-			[begins tags='div' class='container' /]
+			[begins tags='div' class='container-fluid' /]
 					[a class="navbar-brand" href="#page-top" mdataprop="name"]<?php echo $sitename; ?>[/a]
 				[begins tags="div" class="collapse navbar-collapse" id="navbarExample" /]
 					<?php if ($this->countModules('cvstart_menu')) : ?>
@@ -964,7 +964,7 @@ if( $browser->isMobile() == true ){
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
 						[begins tags="div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" mdatatype"http://schema.org/CreativeWork" /]
-							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue img-circle" /]
+							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue rounded-circle" /]
 									<meta itemprop="image" content="<?php echo $mypersonal_photo; ?>">
 							[begins tags='div' more='class="intro-text"' /]
 								[begins tags='h1' class='name' mdataprop='author']
@@ -1166,14 +1166,14 @@ if( $browser->isMobile() == true ){
 		[ends tags="div" /]
 	<?php break; case 'boostrap4-component': ?>
 	[begins tags='body' id='page-top' class='index' mdatatype='http://schema.org/WebPage' /]
-	[nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"]
-		[nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-inverse"]
-			[begins tags='div' class='container' /]
-					[begins tags='button' class='navbar-toggler navbar-toggler-right' more='type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation"' /]
+		[nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav"]
+					[begins tags='button' class='navbar-toggler navbar-toggler-right' more='type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation"' /]
 						Menu [fa name='bars' /]
 					[ends tags='button' /]
+				
+			[begins tags='div' class='container-fluid' /]
 					[a class="navbar-brand" href="#page-top" mdataprop="name"]<?php echo $sitename; ?>[/a]
-				[begins tags="div" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" /]
+				[begins tags="div" class="collapse navbar-collapse" id="navbarExample" /]
 					<?php if ($this->countModules('cvstart_menu')) : ?>
 						<jdoc:include type="modules" name="cvstart_menu" style="none" />
 					<?php endif; ?>			
@@ -1184,7 +1184,7 @@ if( $browser->isMobile() == true ){
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
 						[begins tags="div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" mdatatype"http://schema.org/CreativeWork" /]
-							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue img-circle" /]
+							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue rounded-circle" /]
 									<meta itemprop="image" content="<?php echo $mypersonal_photo; ?>">
 							[begins tags='div' more='class="intro-text"' /]
 								[begins tags='h1' class='name' mdataprop='author']
