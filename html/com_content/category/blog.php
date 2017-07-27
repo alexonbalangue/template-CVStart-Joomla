@@ -81,9 +81,9 @@ JHtml::_('behavior.caption');
 			<?php if ($rowcount == 1) : ?>
 				<?php $row = $counter / $this->columns; ?>
 				<div class="row">
-				<div class="container-fluid clearfix">
+				<div class="clearfix">
 			<?php endif; ?>
-			<div class="col-xs-12 col-md-<?php echo round((12 / $this->columns)); ?>">
+			<div class="col-xs-12 col-<?php echo round((12 / $this->columns)); ?>">
 				<div class="<?php echo $item->state == 0 ? ' sr-only' : null; ?>"
 					itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 					<?php
@@ -113,10 +113,10 @@ JHtml::_('behavior.caption');
 			<?php echo $this->loadTemplate('children'); ?> </div>
 	<?php endif; ?>
 	<?php if (($this->params->def('show_pagination', 1) == 1 || ($this->params->get('show_pagination') == 2)) && ($this->pagination->get('pages.total') > 1)) : ?>
-		<div class="pagination">
+		
 			<?php if ($this->params->def('show_pagination_results', 1)) : ?>
 				<p class="pull-right"> <?php echo $this->pagination->getPagesCounter(); ?> </p>
 			<?php endif; ?>
-			<?php echo $this->pagination->getPagesLinks(); ?> </div>
+			<?php echo $this->pagination->getPagesLinks(); ?> 
 	<?php endif; ?>
 </div>

@@ -56,10 +56,9 @@ JHtml::_('behavior.caption');
 
 		if ($rowcount == 1) : ?>
 
-		<div class="row">
-			<div class="container-fluid">
+			<div class="container">
 		<?php endif; ?>
-			<div class="<?php echo $item->state == 0 ? ' sr-only' : null; ?> col-xs-12 col-lg-<?php echo round((12 / $this->columns));?>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+			<div class="<?php echo $item->state == 0 ? ' sr-only' : null; ?> col-<?php echo round((12 / $this->columns));?>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 			<?php
 					$this->item = &$item;
 					echo $this->loadTemplate('item');
@@ -70,7 +69,6 @@ JHtml::_('behavior.caption');
 			<?php if (($rowcount == $this->columns) or ($counter == $introcount)) : ?>
 
 			</div>
-		</div>
 		<?php endif; ?>
 
 	<?php endforeach; ?>
@@ -83,7 +81,7 @@ JHtml::_('behavior.caption');
 <?php endif; ?>
 
 <?php if ($this->params->def('show_pagination', 2) == 1  || ($this->params->get('show_pagination') == 2 && $this->pagination->pagesTotal > 1)) : ?>
-	<div class="pagination">
+
 
 		<?php if ($this->params->def('show_pagination_results', 1)) : ?>
 			<p class="pull-right">
@@ -91,7 +89,7 @@ JHtml::_('behavior.caption');
 			</p>
 		<?php  endif; ?>
 				<?php echo $this->pagination->getPagesLinks(); ?>
-	</div>
+
 <?php endif; ?>
 
 </div>

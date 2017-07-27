@@ -191,7 +191,6 @@ $params = $this->params;
 	</div>
 	<?php endforeach; ?>
 
-<div class="pagination">
+	
 	<p class="badge"> <?php echo $this->pagination->getPagesCounter(); ?> </p>
 	<?php echo $this->pagination->getPagesLinks(); ?>
-</div>
