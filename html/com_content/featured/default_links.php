@@ -9,7 +9,7 @@
 
 defined('_JEXEC') or die;
 ?>
-<ol class="nav nav-tabs flex-column">
+<ol class="nav nav-tabs nav-stacked">
 <?php foreach ($this->link_items as &$item) : ?>
 	<li class="nav-item">
 		<a class="nav-link" href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catid, $item->language)); ?>">

@@ -43,14 +43,14 @@ $filters = $data['view']->filterForm->getGroup('filter');
 			</button>
 		</div>
 		<?php if ($filterButton) : ?>
-			<div class="hidden-xs">
-				<button type="button" class="btn btn-default hasTooltip" title="<?php echo JHtml::tooltipText('JSEARCH_TOOLS_DESC'); ?>">
+			<div class="hidden-xs-up">
+				<button type="button" class="btn btn-secondary hasTooltip" title="<?php echo JHtml::tooltipText('JSEARCH_TOOLS_DESC'); ?>">
 					<?php echo JText::_('JSEARCH_TOOLS');?> <span class="caret"></span>
 				</button>
 			</div>
 		<?php endif; ?>
 		<div>
-			<button type="button" class="btn btn-default hasTooltip" title="<?php echo JHtml::tooltipText('JSEARCH_FILTER_CLEAR'); ?>">
+			<button type="button" class="btn btn-secondary hasTooltip" title="<?php echo JHtml::tooltipText('JSEARCH_FILTER_CLEAR'); ?>">
 				<?php echo JText::_('JSEARCH_FILTER_CLEAR');?>
 			</button>
 		</div>

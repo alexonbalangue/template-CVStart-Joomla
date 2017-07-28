@@ -29,7 +29,7 @@ $lang  = JFactory::getLanguage();
 			<?php if ($lang->isRtl()) : ?>
 			<h3 class="page-header">
 				<?php if ( $this->params->get('show_cat_num_articles', 1)) : ?>
-					<span class="badge badge-defaul tip hasTooltip" title="<?php echo JHtml::tooltipText('COM_CONTENT_NUM_ITEMS'); ?>">
+					<span class="badge badge-pill badge-info tip hasTooltip" title="<?php echo JHtml::tooltipText('COM_CONTENT_NUM_ITEMS'); ?>">
 						<?php echo $child->getNumItems(true); ?>
 					</span>
 				<?php endif; ?>
@@ -37,20 +37,20 @@ $lang  = JFactory::getLanguage();
 				<?php echo $this->escape($child->title); ?></a>
 
 				<?php if (count($child->getChildren()) > 0 && $this->maxLevel > 1) : ?>
-					<a href="#category-<?php echo $child->id;?>" data-toggle="collapse" data-toggle="button" class="btn btn-xs pull-right"><i class="fa fa-plus"></i></a>
+					<a href="#category-<?php echo $child->id;?>" data-toggle="collapse" data-toggle="button" class="btn btn-xs float-right"><i class="fa fa-plus"></i></a>
 				<?php endif;?>
 			</h3>
 			<?php else : ?>
 			<h3 class="page-header"><a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($child->id));?>">
 				<?php echo $this->escape($child->title); ?></a>
 				<?php if ( $this->params->get('show_cat_num_articles', 1)) : ?>
-					<span class="badge badge-defaul tip hasTooltip" title="<?php echo JHtml::tooltipText('COM_CONTENT_NUM_ITEMS'); ?>">
+					<span class="badge badge-pill badge-info tip hasTooltip" title="<?php echo JHtml::tooltipText('COM_CONTENT_NUM_ITEMS'); ?>">
 						<?php echo $child->getNumItems(true); ?>
 					</span>
 				<?php endif; ?>
 
 				<?php if (count($child->getChildren()) > 0 && $this->maxLevel > 1) : ?>
-					<a href="#category-<?php echo $child->id;?>" data-toggle="collapse" data-toggle="button" class="btn btn-xs pull-right"><i class="fa fa-plus"></i></a>
+					<a href="#category-<?php echo $child->id;?>" data-toggle="collapse" data-toggle="button" class="btn btn-xs float-right"><i class="fa fa-plus"></i></a>
 				<?php endif;?>
 			<?php endif;?>
 			</h3>

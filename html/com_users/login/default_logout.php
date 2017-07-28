@@ -27,14 +27,14 @@ defined('_JEXEC') or die;
 		<?php endif; ?>
 
 		<?php if (($this->params->get('logout_image') != '')) :?>
-			<img src="<?php echo $this->escape($this->params->get('logout_image')); ?>" class="thumbnail pull-right" alt="<?php echo JText::_('COM_USER_LOGOUT_IMAGE_ALT')?>">
+			<img src="<?php echo $this->escape($this->params->get('logout_image')); ?>" class="thumbnail float-right" alt="<?php echo JText::_('COM_USER_LOGOUT_IMAGE_ALT')?>">
 		<?php endif; ?>
 
 	<?php if (($this->params->get('logoutdescription_show') == 1 && str_replace(' ', '', $this->params->get('logout_description')) != '')|| $this->params->get('logout_image') != '') : ?>
 	</div>
 	<?php endif; ?>
 
-	<form action="<?php echo JRoute::_('index.php?option=com_users&task=user.logout'); ?>" method="post" class="form-horizontal">
+	<form action="<?php echo JRoute::_('index.php?option=com_users&task=user.logout'); ?>" method="post" class="form-inline">
 		<div class="form-group">
 			<button type="submit" class="btn btn-primary"><i class="fa fa-arrow-left"></i> <?php echo JText::_('JLOGOUT'); ?></button>
 		</div>

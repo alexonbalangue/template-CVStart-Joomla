@@ -52,13 +52,13 @@ if ($currentPage >= $step)
 <div class="pagination clearfix text-center">
 
 	<?php if ($showLimitBox) : ?>
-		<div class="pull-right">
+		<div class="float-right">
 			<?php echo JText::_('JGLOBAL_DISPLAY_NUM') . $list['limitfield']; ?>
 		</div>
 	<?php endif; ?>
 
 	<?php if ($showPagesLinks && (!empty($pages))) : ?>
-		<ul class="pagination-lg">
+		<ul class="pagination">
 			<?php
 				echo JLayoutHelper::render('joomla.pagination.link', $pages['start']);
 				echo JLayoutHelper::render('joomla.pagination.link', $pages['previous']); ?>

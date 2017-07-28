@@ -64,7 +64,7 @@ switch($hide_joomla_default):
 		$userCss = JPATH_SITE . '/templates/' . $this->template . '/assets/user.css';
 		if (file_exists($userCss) && filesize($userCss) > 0)
 		{
-			$docs->addStyleSheetVersion('templates/' . $this->template . '/assets/user.css');
+			$docs->addStyleSheetVersion('templates/' . $this->template . '/assetes/css/user.css');
 		}
 			break;
 endswitch;
@@ -77,9 +77,9 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
 	$boostrap3_sizes_left = "col-xs-12 col-md-3";
 	$boostrap3_sizes_body = "col-xs-12 col-md-6";
 	$boostrap3_sizes_right = "col-xs-12 col-md-3";
-	$boostrap4_sizes_left = "";
-	$boostrap4_sizes_body = "col-xs-12 col-md-6";
-	$boostrap4_sizes_right = "col-xs-12 col-md-3";
+	$boostrap4_sizes_left = "col col-3";
+	$boostrap4_sizes_body = "col col-6";
+	$boostrap4_sizes_right = "col col-3";
 } elseif ($this->countModules('sidebar-left') && !$this->countModules('sidebar-right')){
 	$boostrap2_sizes_left = "span4";
 	$boostrap2_sizes_body = "span9";
@@ -87,8 +87,8 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
 	$boostrap3_sizes_left = "col-xs-12 col-md-4";
 	$boostrap3_sizes_body = "col-xs-12 col-md-9";
 	$boostrap3_sizes_right = "";
-	$boostrap4_sizes_left = "col-xs-12 col-md-4";
-	$boostrap4_sizes_body = "col-xs-12 col-md-9";
+	$boostrap4_sizes_left = "col col-4";
+	$boostrap4_sizes_body = "col col-9";
 	$boostrap4_sizes_right = "";
 } elseif (!$this->countModules('sidebar-left') && $this->countModules('sidebar-right')){
 	$boostrap2_sizes_left = "";
@@ -98,8 +98,8 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
 	$boostrap3_sizes_body = "col-xs-12 col-md-9";
 	$boostrap3_sizes_right = "col-xs-12 col-md-4";
 	$boostrap4_sizes_left = "";
-	$boostrap4_sizes_body = "col-xs-12 col-md-9";
-	$boostrap4_sizes_right = "col-xs-12 col-md-4";
+	$boostrap4_sizes_body = "col col-9";
+	$boostrap4_sizes_right = "col col-4";
 } else {
 	$boostrap2_sizes_left = "";
 	$boostrap2_sizes_body = "span12";
@@ -108,7 +108,7 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
 	$boostrap3_sizes_body = "col-xs-12 col-md-12";
 	$boostrap3_sizes_right = "";
 	$boostrap4_sizes_left = "";
-	$boostrap4_sizes_body = "col-xs-12 col-md-12";
+	$boostrap4_sizes_body = "col col-12";
 	$boostrap4_sizes_right = "";
 }
 

@@ -72,7 +72,7 @@ if ($displayData['active'])
 }
 else
 {
-	$class = (property_exists($item, 'active') && $item->active) ? 'active' : 'disabled';
+	$class = (property_exists($item, 'page-item" active') && $item->active) ? 'page-item" active' : 'page-item" disabled';
 }
 ?>
 <?php if ($displayData['active']) : ?>

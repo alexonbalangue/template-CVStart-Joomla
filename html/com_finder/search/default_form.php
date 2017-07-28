@@ -82,7 +82,7 @@ jQuery(function() {";
 			<?php endif; ?>
 			<!--
 			<?php if ($this->params->get('show_advanced', 1)) : ?>
-				<a href="#advancedSearch" data-toggle="collapse" class="btn btn-default"><span class="icon-list"></span> <?php echo JText::_('COM_FINDER_ADVANCED_SEARCH_TOGGLE'); ?></a>
+				<a href="#advancedSearch" data-toggle="collapse" class="btn btn-secondary"><span class="icon-list"></span> <?php echo JText::_('COM_FINDER_ADVANCED_SEARCH_TOGGLE'); ?></a>
 			<?php endif; ?>
 			//-->
 		</div>

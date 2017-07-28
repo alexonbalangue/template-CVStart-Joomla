@@ -9,4 +9,4 @@
 
 defined('JPATH_BASE') or die;
 ?>
-<div role="separator" class="divider"></div>
+<div role="separator" class="dropdown-dropdown-divider"></div>

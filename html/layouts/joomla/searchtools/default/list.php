@@ -15,7 +15,7 @@ $data = $displayData;
 $list = $data['view']->filterForm->getGroup('list');
 ?>
 <?php if ($list) : ?>
-	<div class="hidden-xs">
+	<div class="hidden-xs-up">
 		<?php foreach ($list as $fieldName => $field) : ?>
 			<div>
 				<?php echo $field->input; ?>

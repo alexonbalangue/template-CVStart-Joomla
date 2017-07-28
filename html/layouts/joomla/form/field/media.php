@@ -168,7 +168,7 @@ echo '	<input type="text" name="' . $name . '" id="' . $id . '" value="'
 	. JUri::root() . '"/>';
 
 ?>
-<a class="modal btn btn-default" title="<?php echo JText::_('JLIB_FORM_BUTTON_SELECT'); ?>" href="
+<a class="modal btn btn-secondary" title="<?php echo JText::_('JLIB_FORM_BUTTON_SELECT'); ?>" href="
 <?php echo ($readonly ? ''
 		: ($link ? $link
 		: 'index.php?option=com_media&amp;view=images&amp;tmpl=component&amp;asset=' . $asset . '&amp;author='

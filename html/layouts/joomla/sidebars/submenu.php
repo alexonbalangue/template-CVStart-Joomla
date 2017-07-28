@@ -59,7 +59,7 @@ JFactory::getDocument()->addScriptDeclaration('
 			<hr />
 			<?php endif; ?>
 			<?php if ($displayData->displayFilters) : ?>
-			<div class="hidden-xs">
+			<div class="hidden-xs-up">
 				<h4 class="page-header"><?php echo JText::_('JSEARCH_FILTER_LABEL');?></h4>
 				<?php foreach ($displayData->filters as $filter) : ?>
 					<label for="<?php echo $filter['name']; ?>" class="sr-only"><?php echo $filter['label']; ?></label>

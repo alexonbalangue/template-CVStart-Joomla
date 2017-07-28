@@ -28,7 +28,7 @@ if (substr($className, -1) == 's')
 }
 $tagsData = $displayData->get('category')->tags->itemTags;
 ?>
-<div>
+
 	<div class="<?php echo $displayData->pageclass_sfx;?>">
 		<?php if ($params->get('show_page_heading')) : ?>
 			<h1>
@@ -70,5 +70,3 @@ $tagsData = $displayData->get('category')->tags->itemTags;
 			</div>
 		<?php endif; ?>
 	</div>
-</div>
-

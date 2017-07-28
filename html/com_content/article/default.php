@@ -38,7 +38,7 @@ JHtml::_('behavior.caption');
 	|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author') ); ?>
 
 	<?php if (!$useDefList && $this->print) : ?>
-		<div id="pop-print" class="btn btn-default hidden-print">
+		<div id="pop-print" class="btn btn-secondary hidden-print">
 			<?php echo JHtml::_('icon.print_screen', $this->item, $params); ?>
 		</div>
 		<div class="clearfix"> </div>
@@ -95,7 +95,7 @@ JHtml::_('behavior.caption');
 	<?php if ($params->get('access-view')):?>
 	<?php if (isset($images->image_fulltext) && !empty($images->image_fulltext)) : ?>
 	<?php $imgfloat = (empty($images->float_fulltext)) ? $params->get('float_fulltext') : $images->float_fulltext; ?>
-	<div class="pull-<?php echo htmlspecialchars($imgfloat); ?>"> <img
+	<div class="float-<?php echo htmlspecialchars($imgfloat); ?>"> <img
 	<?php if ($images->image_fulltext_caption):
 		echo 'class="caption"' . ' title="' . htmlspecialchars($images->image_fulltext_caption) . '"';
 	endif; ?>

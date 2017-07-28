@@ -37,7 +37,7 @@ JHtml::_('behavior.formvalidator');
 	</div>
 	<?php endif; ?>
 
-	<form action="<?php echo JRoute::_('index.php?option=com_users&task=user.login'); ?>" method="post" class="form-validate form-horizontal">
+	<form action="<?php echo JRoute::_('index.php?option=com_users&task=user.login'); ?>" method="post" class="form-validate form-inline">
 
 			<?php foreach ($this->form->getFieldset('credentials') as $field) : ?>
 				<?php if (!$field->hidden) : ?>
@@ -79,11 +79,11 @@ JHtml::_('behavior.formvalidator');
 	</form>
 </div>
 <div class="btn-group btn-group-lg btn-group-justified">
-	<a class="btn btn-default" href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>"><?php echo JText::_('COM_USERS_LOGIN_RESET'); ?></a>
-	<a class="btn btn-default" href="<?php echo JRoute::_('index.php?option=com_users&view=remind'); ?>"><?php echo JText::_('COM_USERS_LOGIN_REMIND'); ?></a>
+	<a class="btn btn-secondary" href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>"><?php echo JText::_('COM_USERS_LOGIN_RESET'); ?></a>
+	<a class="btn btn-secondary" href="<?php echo JRoute::_('index.php?option=com_users&view=remind'); ?>"><?php echo JText::_('COM_USERS_LOGIN_REMIND'); ?></a>
 	<?php
 		$usersConfig = JComponentHelper::getParams('com_users');
 		if ($usersConfig->get('allowUserRegistration')) : ?>
-			<a class="btn btn-default" href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>"><?php echo JText::_('COM_USERS_LOGIN_REGISTER'); ?></a>
+			<a class="btn btn-secondary" href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>"><?php echo JText::_('COM_USERS_LOGIN_REGISTER'); ?></a>
 	<?php endif; ?>
 </div>

@@ -66,7 +66,7 @@ JFactory::getDocument()->addScriptDeclaration("
 				</div>	
 			<?php endif; ?>
 			<?php if ($this->params->get('show_pagination_limit')) : ?>
-				<div class="btn-group pull-right">
+				<div class="btn-group float-right">
 					<label for="limit" class="sr-only">
 						<?php echo JText::_('JGLOBAL_DISPLAY_NUM'); ?>
 					</label>
@@ -103,7 +103,7 @@ JFactory::getDocument()->addScriptDeclaration("
 				<span>
 			<?php if (!empty($images->image_intro)): ?>
 				<?php $imgfloat = (empty($images->float_intro)) ? $this->params->get('float_intro') : $images->float_intro; ?>
-				<div class="pull-<?php echo htmlspecialchars($imgfloat); ?> item-image">
+				<div class="float-<?php echo htmlspecialchars($imgfloat); ?> item-image">
 					<img
 						<?php if ($images->image_intro_caption) : ?>
 							<?php echo 'class="caption"' . ' title="' . htmlspecialchars($images->image_intro_caption) . '"'; ?>
@@ -120,7 +120,7 @@ JFactory::getDocument()->addScriptDeclaration("
 					</span>
 				<?php endif; ?>
 				<?php if ($this->params->get('all_tags_show_tag_hits')) : ?>
-					<span class="badge">
+					<span class="badge badge-pill badge-info">
 						<?php echo JText::sprintf('JGLOBAL_HITS_COUNT', $item->hits); ?>
 					</span>
 				<?php endif; ?>
@@ -137,9 +137,9 @@ JFactory::getDocument()->addScriptDeclaration("
 	<?php // Add pagination links ?>
 	<?php if (!empty($this->items)) : ?>
 	<?php if (($this->params->def('show_pagination', 2) == 1  || ($this->params->get('show_pagination') == 2)) && ($this->pagination->pagesTotal > 1)) : ?>
-		<div class="pagination">
+		<div class="bg-info clearfix">
 			<?php if ($this->params->def('show_pagination_results', 1)) : ?>
-				<p class="pull-right">
+				<p class="float-right">
 					<?php echo $this->pagination->getPagesCounter(); ?>
 				</p>
 			<?php endif; ?>

@@ -10,7 +10,7 @@
 defined('JPATH_BASE') or die;
 
 ?>
-			<dd class="badge">
+			<dd class="badge badge-pill badge-info">
 					<i class="fa fa-eye"></i>
 					<meta itemprop="interactionCount" content="UserPageVisits:<?php echo $displayData['item']->hits; ?>" />
 					<?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $displayData['item']->hits); ?>

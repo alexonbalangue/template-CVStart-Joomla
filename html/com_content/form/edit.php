@@ -50,12 +50,12 @@ JFactory::getDocument()->addScriptDeclaration("
 		<div class="btn-toolbar">
 			<div class="btn-group">
 				<button type="button" class="btn btn-primary" onclick="Joomla.submitbutton('article.save')">
-					<span class="icon-ok"></span><?php echo JText::_('JSAVE') ?>
+					<i class="fa check-square-o"></i> <?php echo JText::_('JSAVE') ?>
 				</button>
 			</div>
 			<div class="btn-group">
-				<button type="button" class="btn btn-secondary" onclick="Joomla.submitbutton('article.cancel')">
-					<span class="icon-cancel"></span><?php echo JText::_('JCANCEL') ?>
+				<button type="button" class="btn btn-danger" onclick="Joomla.submitbutton('article.cancel')">
+					<i class="fa fa-ban"></i> <?php echo JText::_('JCANCEL') ?>
 				</button>
 			</div>
 			<?php if ($params->get('save_history', 0) && $this->item->id) : ?>
@@ -65,20 +65,20 @@ JFactory::getDocument()->addScriptDeclaration("
 			<?php endif; ?>
 		</div>
 			<ul class="nav nav-tabs">
-				<li class="nav-item active"><a class="nav-link" href="#editor" data-toggle="tab"><?php echo JText::_('COM_CONTENT_ARTICLE_CONTENT') ?></a></li>
+				<li><a href="#editor" data-toggle="tab"><?php echo JText::_('COM_CONTENT_ARTICLE_CONTENT') ?></a></li>
 				<?php if ($params->get('show_urls_images_frontend') ) : ?>
-				<li class="nav-item"><a class="nav-link" href="#images" data-toggle="tab"><?php echo JText::_('COM_CONTENT_IMAGES_AND_URLS') ?></a></li>
+				<li><a href="#images" data-toggle="tab"><?php echo JText::_('COM_CONTENT_IMAGES_AND_URLS') ?></a></li>
 				<?php endif; ?>
 				<?php foreach ($this->form->getFieldsets('params') as $name => $fieldSet) : ?>
-				<li class="nav-item"><a class="nav-link" href="#params-<?php echo $name; ?>" data-toggle="tab"><?php echo JText::_($fieldSet->label); ?></a></li>
+				<li><a href="#params-<?php echo $name; ?>" data-toggle="tab"><?php echo JText::_($fieldSet->label); ?></a></li>
 				<?php endforeach; ?>
-				<li class="nav-item"><a class="nav-link" href="#publishing" data-toggle="tab"><?php echo JText::_('COM_CONTENT_PUBLISHING') ?></a></li>
-				<li class="nav-item"><a class="nav-link" href="#language" data-toggle="tab"><?php echo JText::_('JFIELD_LANGUAGE_LABEL') ?></a></li>
-				<li class="nav-item"><a class="nav-link" href="#metadata" data-toggle="tab"><?php echo JText::_('COM_CONTENT_METADATA') ?></a></li>
+				<li><a href="#publishing" data-toggle="tab"><?php echo JText::_('COM_CONTENT_PUBLISHING') ?></a></li>
+				<li><a href="#language" data-toggle="tab"><?php echo JText::_('JFIELD_LANGUAGE_LABEL') ?></a></li>
+				<li><a href="#metadata" data-toggle="tab"><?php echo JText::_('COM_CONTENT_METADATA') ?></a></li>
 			</ul>
 
 			<div class="tab-content">
-				<div class="tab-pane active" id="editor">
+				<div class="tab-pane" id="editor">
 					<?php echo $this->form->renderField('title'); ?>
 
 					<?php if (is_null($this->item->id)) : ?>

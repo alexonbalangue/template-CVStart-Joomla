@@ -17,7 +17,7 @@ $params = $this->item->params;
 if ($urls && (!empty($urls->urla) || !empty($urls->urlb) || !empty($urls->urlc))) :
 ?>
 
-	<ul class="nav nav-tabs flex-column">
+	<ul class="nav nav-tabs nav-stacked">
 		<?php
 			$urlarray = array(
 			array($urls->urla, $urls->urlatext, $urls->targeta, 'a'),
@@ -40,7 +40,7 @@ if ($urls && (!empty($urls->urla) || !empty($urls->urlb) || !empty($urls->urlc))
 				// If no target is present, use the default
 				$target = $target ? $target : $params->get('target' . $id);
 				?>
-			<li class="nav-item">
+			<li nav="nav-item">
 				<?php
 					// Compute the correct link
 
@@ -61,7 +61,7 @@ if ($urls && (!empty($urls->urla) || !empty($urls->urlb) || !empty($urls->urlc))
 						case 3:
 							// Open in a modal window
 							JHtml::_('behavior.modal', 'a.modal');
-							echo '<a class="modal nav-link" href="' . htmlspecialchars($link, ENT_COMPAT, 'UTF-8') . '"  rel="{handler: \'iframe\', size: {x:600, y:600}}">' .
+							echo '<a class="nav-link modal" href="' . htmlspecialchars($link, ENT_COMPAT, 'UTF-8') . '"  rel="{handler: \'iframe\', size: {x:600, y:600}}">' .
 								htmlspecialchars($label, ENT_COMPAT, 'UTF-8') . ' </a>';
 							break;
 

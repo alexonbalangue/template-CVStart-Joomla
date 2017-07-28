@@ -30,13 +30,13 @@ if (count($this->items[$this->parent->id]) > 0 && $this->maxLevelcat != 0) :
 				<a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($item->id, $item->language));?>">
 				<?php echo $this->escape($item->title); ?></a>
 				<?php if ($this->params->get('show_cat_num_articles_cat') == 1) :?>
-					<span class="badge tip hasTooltip" title="<?php echo JHtml::tooltipText('COM_CONTENT_NUM_ITEMS'); ?>">
+					<span class="badge badge-pill badge-info tip hasTooltip" title="<?php echo JHtml::tooltipText('COM_CONTENT_NUM_ITEMS'); ?>">
 						<?php echo $item->numitems; ?>
 					</span>
 				<?php endif; ?>
 				<?php if (count($item->getChildren()) > 0 && $this->maxLevelcat > 1) : ?>
 					<a id="category-btn-<?php echo $item->id;?>" href="#category-<?php echo $item->id;?>"
-						data-toggle="collapse" data-toggle="button" class="btn btn-xs pull-right"><i class="fa fa-plus"></i></a>
+						data-toggle="collapse" data-toggle="button" class="btn btn-xs float-right"><i class="fa fa-plus"></i></a>
 				<?php endif;?>
 			</h3>
 			<?php if ($this->params->get('show_description_image') && $item->getParams()->get('image')) : ?>

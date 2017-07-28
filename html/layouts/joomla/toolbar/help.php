@@ -15,7 +15,7 @@ $doTask = $displayData['doTask'];
 $text   = $displayData['text'];
 
 ?>
-<button onclick="<?php echo $doTask; ?>" rel="help" class="btn btn-default btn-xs">
+<button onclick="<?php echo $doTask; ?>" rel="help" class="btn btn-secondary btn-xs">
 	<i class="fa fa-question"></i>
 	<?php echo $text; ?>
 </button>
