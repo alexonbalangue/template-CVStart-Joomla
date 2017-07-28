@@ -80,8 +80,8 @@ JHtml::_('behavior.caption');
 			<?php $rowcount = ((int) $key % (int) $this->columns) + 1; ?>
 			<?php if ($rowcount == 1) : ?>
 				<?php $row = $counter / $this->columns; ?>
-				<div class="row">
-				<div class="container-fluid clearfix">
+				<!--<div class="row">
+				<div class="container-fluid clearfix"> -->
 			<?php endif; ?>
 			<div class="col col-<?php echo round((12 / $this->columns)); ?>">
 				<div class="<?php echo $item->state == 0 ? ' sr-only' : null; ?>"
@@ -95,8 +95,8 @@ JHtml::_('behavior.caption');
 				<?php $counter++; ?>
 			</div><!-- end span -->
 			<?php if (($rowcount == $this->columns) or ($counter == $introcount)) : ?>
-				</div>
-				</div><!-- end row -->
+				<!--</div>
+				</div> end row -->
 			<?php endif; ?>
 		<?php endforeach; ?>
 	<?php endif; ?>

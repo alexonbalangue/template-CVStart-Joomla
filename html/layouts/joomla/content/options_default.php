@@ -10,7 +10,7 @@
 defined('JPATH_BASE') or die;
 
 ?>
-<div class="<?php echo !empty($displayData->formclass) ? $displayData->formclass : 'form-horizontal'; ?>">
+<div class="<?php echo !empty($displayData->formclass) ? $displayData->formclass : 'form-inline'; ?>">
 	<legend><?php echo $displayData->name ?></legend>
 	<?php if (!empty($displayData->description)): ?>
 		<p><?php echo $displayData->description; ?></p>

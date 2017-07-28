@@ -16,7 +16,7 @@ JHtml::_('behavior.caption');
 // If the page class is defined, add to class as suffix.
 // It will be a separate class if the user starts it with a space
 ?>
-<div itemscope itemtype="https://schema.org/Blog">
+<div class="row" itemscope itemtype="https://schema.org/Blog">
 <?php if ($this->params->get('show_page_heading') != 0) : ?>
 <div class="page-header">
 	<h1>
@@ -29,7 +29,7 @@ JHtml::_('behavior.caption');
 <?php if (!empty($this->lead_items)) : ?>
 
 	<?php foreach ($this->lead_items as &$item) : ?>
-		<div class="<?php echo $item->state == 0 ? ' sr-only' : null; ?> clearfix" 
+		<div class="<?php /*echo $item->state == 0 ? ' sr-only' : null;*/ ?>" 
 			itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 			<?php
 				$this->item = &$item;
@@ -57,7 +57,7 @@ JHtml::_('behavior.caption');
 		if ($rowcount == 1) : ?>
 
 		<?php endif; ?>
-			<div class="<?php echo $item->state == 0 ? ' sr-only' : null; ?> col col-<?php echo round((12 / $this->columns));?>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+			<div class="<?php /*echo $item->state == 0 ? ' sr-only' : null;*/ ?>col col-<?php echo round((12 / $this->columns));?>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
 			<?php
 					$this->item = &$item;
 					echo $this->loadTemplate('item');
