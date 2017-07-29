@@ -25,12 +25,12 @@ JHtml::_('bootstrap.tooltip');
 				<?php if (!$params->get('usetext')) : ?>
 					<label for="modlgn-username" class="sr-only"><?php echo JText::_('MOD_LOGIN_VALUE_USERNAME') ?></label>
 					<div class="input-group">
-					<div class="input-group-addon"><i class="fa fa-user"></i></div> <input id="modlgn-username" autocomplete="off" type="text" name="username" class="form-control col-sm-5 col-md-5 col-lg-5 input-lg" tabindex="0" placeholder="<?php echo JText::_('MOD_LOGIN_VALUE_USERNAME') ?>">
+					<div class="input-group-addon"><i class="fa fa-user"></i></div> <input id="modlgn-username" autocomplete="off" type="text" name="username" class="form-control col col-5 form-control-lg" tabindex="0" placeholder="<?php echo JText::_('MOD_LOGIN_VALUE_USERNAME') ?>">
 					</div>	
 				<?php else: ?>
 					
-    <label for="modlgn-username3" class="col-sm-2  control-label"><?php echo JText::_('MOD_LOGIN_VALUE_USERNAME') ?></label>
-    <input id="modlgn-username" type="text" name="username" class="form-control col-sm-5 col-md-5 col-lg-5 input-lg" tabindex="0" placeholder="<?php echo JText::_('MOD_LOGIN_VALUE_USERNAME') ?>">
+    <label for="modlgn-username3" class="col col-2  control-label"><?php echo JText::_('MOD_LOGIN_VALUE_USERNAME') ?></label>
+    <input id="modlgn-username" type="text" name="username" class="form-control col col-5 form-control-lg" tabindex="0" placeholder="<?php echo JText::_('MOD_LOGIN_VALUE_USERNAME') ?>">
 
 				<?php endif; ?>
 			</div>
@@ -40,12 +40,12 @@ JHtml::_('bootstrap.tooltip');
 					<label for="modlgn-password" class="sr-only"><?php echo JText::_('JGLOBAL_PASSWORD') ?></label>
 					<div class="input-group">
 					<div class="input-group-addon"><i class="fa fa-lock"></i></div>
-					<input id="modlgn-password" autocomplete="off" type="password" name="password" class="form-control col-sm-5 col-md-5 col-lg-5 input-lg" tabindex="0" placeholder="<?php echo JText::_('JGLOBAL_PASSWORD') ?>">
+					<input id="modlgn-password" autocomplete="off" type="password" name="password" class="form-control col col-5 form-control-lg" tabindex="0" placeholder="<?php echo JText::_('JGLOBAL_PASSWORD') ?>">
 					</div>	
 				<?php else: ?>
-					<label for="modlgn-passwd" class="col-sm-2  control-label"><?php echo JText::_('JGLOBAL_PASSWORD') ?></label>
+					<label for="modlgn-passwd" class="col col-2  control-label"><?php echo JText::_('JGLOBAL_PASSWORD') ?></label>
 					<div class="col-sm-4 col-md-4 col-lg-4">
-					  <input type="password" name="password" tabindex="0" class="form-control col-sm-5 col-md-5 col-lg-5 input-lg" id="modlgn-passwd" placeholder="<?php echo JText::_('JGLOBAL_PASSWORD') ?>">
+					  <input type="password" name="password" tabindex="0" class="form-control col col-5 form-control-lg" id="modlgn-passwd" placeholder="<?php echo JText::_('JGLOBAL_PASSWORD') ?>">
 					</div>	
 
 				<?php endif; ?>
@@ -56,7 +56,7 @@ JHtml::_('bootstrap.tooltip');
 						<label for="modlgn-secretkey" class="sr-only"><?php echo JText::_('JGLOBAL_SECRETKEY') ?></label>
 					<div class="input-group">
 					<div class="input-group-addon"><i class="fa fa-star"></i></div>
-					 <input id="modlgn-secretkey" autocomplete="off" type="text" name="secretkey" class="form-control col-sm-5 col-md-5 col-lg-5 input-lg" tabindex="0" placeholder="<?php echo JText::_('JGLOBAL_SECRETKEY') ?>" />
+					 <input id="modlgn-secretkey" autocomplete="off" type="text" name="secretkey" class="form-control col col-5 form-control-lg" tabindex="0" placeholder="<?php echo JText::_('JGLOBAL_SECRETKEY') ?>" />
 					  <div class="input-group-addon">
 						<span class="btn width-auto hasTooltip" title="<?php echo JText::_('JGLOBAL_SECRETKEY_HELP'); ?>">
 						  <i class="fa fa-question-circle"></i>
@@ -64,10 +64,10 @@ JHtml::_('bootstrap.tooltip');
 					</div>	
 					</div>	
 				<?php else: ?>
-					<label for="modlgn-secretkey" class="col-sm-2  control-label"><?php echo JText::_('JGLOBAL_SECRETKEY') ?></label>
+					<label for="modlgn-secretkey" class="col col-2  control-label"><?php echo JText::_('JGLOBAL_SECRETKEY') ?></label>
 					<div class="input-group">
-					  <input id="modlgn-secretkey" autocomplete="off" type="text" name="secretkey" class="form-control col-sm-5 col-md-5 col-lg-5 input-lg" tabindex="0" placeholder="<?php echo JText::_('JGLOBAL_SECRETKEY') ?>" />	
-					<span class="btn width-auto hasTooltip col-sm-2" title="<?php echo JText::_('JGLOBAL_SECRETKEY_HELP'); ?>">
+					  <input id="modlgn-secretkey" autocomplete="off" type="text" name="secretkey" class="form-control col col-5 form-control-lg" tabindex="0" placeholder="<?php echo JText::_('JGLOBAL_SECRETKEY') ?>" />	
+					<span class="btn width-auto hasTooltip col col-2" title="<?php echo JText::_('JGLOBAL_SECRETKEY_HELP'); ?>">
 						  <i class="fa fa-question-circle"></i>
 						</span>
 					</div>					
