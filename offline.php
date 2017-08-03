@@ -118,10 +118,10 @@ $twofactormethods = UsersHelper::getTwoFactorMethods();
 				[begins tags="div" class="row" /]  
 					[begins tags="div" class="col-lg-12 text-center" /]  
 						<i class="fa fa-mobile fa-5x"></i> <i class="fa fa-tablet fa-5x"></i> <i class="fa fa-laptop fa-5x"></i> <i class="fa fa-desktop fa-5x"></i> <br>
-						Nous sommes 100% amis avec les moteur de recherches et multiplateformes avec n'importe quelles choix de votre navigateur internet.<br>
+						
 						<span itemprop="copyrightHolder">&copy; <a href="<?php echo $this->baseurl; ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - 
-						Conception by <a href="//www.AlexonBalangue.me" target="_top">www.AlexonBalangue.me</a> - Webdesigner by <a href="//www.startbootstrap.com" target="_top">www.StartBootstrap.com</a>
-						<br />Toute reproduction interdite sans l'autorisation de l'auteur. 
+						<?php echo JText::_('TPL_CVSTART_FOOTER_CONCEPT'); ?> <a href="//www.AlexonBalangue.me" target="_top">www.AlexonBalangue.me</a> - <?php echo JText::_('TPL_CVSTART_FOOTER_DESIGN'); ?> <a href="//www.startbootstrap.com" target="_top">www.StartBootstrap.com</a>
+						<br /><?php echo JText::_('TPL_CVSTART_FOOTER_AUTHOR'); ?>
 					[ends tags="div" /]  
 				[ends tags="div" /]  
 			[ends tags="div" /]  

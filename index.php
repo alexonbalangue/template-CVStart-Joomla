@@ -87,8 +87,8 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
 	$boostrap3_sizes_left = "col-xs-12 col-md-4";
 	$boostrap3_sizes_body = "col-xs-12 col-md-9";
 	$boostrap3_sizes_right = "";
-	$boostrap4_sizes_left = "col col-4";
-	$boostrap4_sizes_body = "col col-9";
+	$boostrap4_sizes_left = "col col-12 col-md-4";
+	$boostrap4_sizes_body = "col col-12 col-md-9";
 	$boostrap4_sizes_right = "";
 } elseif (!$this->countModules('sidebar-left') && $this->countModules('sidebar-right')){
 	$boostrap2_sizes_left = "";
@@ -98,8 +98,8 @@ if ($this->countModules('sidebar-left') && $this->countModules('sidebar-right'))
 	$boostrap3_sizes_body = "col-xs-12 col-md-9";
 	$boostrap3_sizes_right = "col-xs-12 col-md-4";
 	$boostrap4_sizes_left = "";
-	$boostrap4_sizes_body = "col col-9";
-	$boostrap4_sizes_right = "col col-4";
+	$boostrap4_sizes_body = "col col-12 col-md-9";
+	$boostrap4_sizes_right = "col col-12 col-md-4";
 } else {
 	$boostrap2_sizes_left = "";
 	$boostrap2_sizes_body = "span12";
@@ -364,8 +364,8 @@ if( $browser->isMobile() == true ){
 					[begins tags='div' class='row-fluid' /]
 						[begins tags='div' class='span12 text-center' mdatatype='http://schema.org/CreativeWork' /]
 						[fa name="mobile" zoom="5x" /] [fa name="tablet" zoom="5x" /] [fa name="laptop" zoom="5x" /] [fa name="desktop" zoom="5x" /][br /]
-					Nous sommes 100% amis avec les moteur de recherches et multiplateformes avec n'importe quelles choix de votre navigateur internet.[br /]
-							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - Toute reproduction interdite sans l'autorisation de l'auteur.. - Conception par [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] et WebDesigner par  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url]
+					
+							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - <?php echo JText::_('TPL_CVSTART_FOOTER_AUTHOR'); ?> - <?php echo JText::_('TPL_CVSTART_FOOTER_CONCEPT'); ?> [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] - <?php echo JText::_('TPL_CVSTART_FOOTER_DESIGN'); ?>  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url]
 						[ends tags="div" /]	
 					[ends tags="div" /]	
 				[ends tags="div" /]	
@@ -536,8 +536,8 @@ if( $browser->isMobile() == true ){
 					[begins tags='div' class='row-fluid' /]
 						[begins tags='div' class='span12 text-center' mdatatype='http://schema.org/CreativeWork' /]
 						[fa name="mobile" zoom="5x" /] [fa name="tablet" zoom="5x" /] [fa name="laptop" zoom="5x" /] [fa name="desktop" zoom="5x" /][br /]
-					Nous sommes 100% amis avec les moteur de recherches et multiplateformes avec n'importe quelles choix de votre navigateur internet.[br /]
-							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - Toute reproduction interdite sans l'autorisation de l'auteur. - Conception par [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] et WebDesigner par  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url]
+					
+							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - <?php echo JText::_('TPL_CVSTART_FOOTER_AUTHOR'); ?>- <?php echo JText::_('TPL_CVSTART_FOOTER_CONCEPT'); ?> [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] - <?php echo JText::_('TPL_CVSTART_FOOTER_DESIGN'); ?>  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url]
 						[ends tags="div" /]	
 					[ends tags="div" /]	
 				[ends tags="div" /]	
@@ -757,11 +757,10 @@ if( $browser->isMobile() == true ){
 					[begins tags='div' class='row' /]
 						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' mdatatype='http://schema.org/CreativeWork' /]
 						[fa name="mobile" zoom="5x" /] [fa name="tablet" zoom="5x" /] [fa name="laptop" zoom="5x" /] [fa name="desktop" zoom="5x" /][br /]
-					Nous sommes 100% amis avec les moteur de recherches et multiplateformes avec n'importe quelles choix de votre navigateur internet.[br /]
-							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - Toute reproduction interdite sans l'autorisation de l'auteur.. - Conception par [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] et WebDesigner par  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url][br /][br /]
+					
+							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - <?php echo JText::_('TPL_CVSTART_FOOTER_AUTHOR'); ?> - <?php echo JText::_('TPL_CVSTART_FOOTER_CONCEPT'); ?> [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] - <?php echo JText::_('TPL_CVSTART_FOOTER_DESIGN'); ?>  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url][br /][br /]
 							
-							Le nom Joomla!® est utilisé sous license limitée de Open Source Matters, le propriétaire mondial de la marque de commerce.[br /]
-							Alexon Balangue n'est ni affilié à Open Source Matters ou au projet Joomla!® ni approuvé par eux.
+							<?php echo JText::_('TPL_CVSTART_FOOTER_NOTICE'); ?>
 						[ends tags="div" /]	
 					[ends tags="div" /]	
 				[ends tags="div" /]	
@@ -929,11 +928,10 @@ if( $browser->isMobile() == true ){
 					[begins tags='div' class='row' /]
 						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' mdatatype='http://schema.org/CreativeWork' /]
 						[fa name="mobile" zoom="5x" /] [fa name="tablet" zoom="5x" /] [fa name="laptop" zoom="5x" /] [fa name="desktop" zoom="5x" /][br /]
-					Nous sommes 100% amis avec les moteur de recherches et multiplateformes avec n'importe quelles choix de votre navigateur internet.[br /]
-							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - Toute reproduction interdite sans l'autorisation de l'auteur. - Conception par [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] et WebDesigner par  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url][br /][br /]
+					
+							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - <?php echo JText::_('TPL_CVSTART_FOOTER_AUTHOR'); ?>- <?php echo JText::_('TPL_CVSTART_FOOTER_CONCEPT'); ?> [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] - <?php echo JText::_('TPL_CVSTART_FOOTER_DESIGN'); ?>  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url][br /][br /]
 							
-							Le nom Joomla!® est utilisé sous license limitée de Open Source Matters, le propriétaire mondial de la marque de commerce.[br /]
-							Alexon Balangue n'est ni affilié à Open Source Matters ou au projet Joomla!® ni approuvé par eux.
+							<?php echo JText::_('TPL_CVSTART_FOOTER_NOTICE'); ?>
 
 						[ends tags="div" /]	
 					[ends tags="div" /]	
@@ -963,7 +961,7 @@ if( $browser->isMobile() == true ){
 			[header class="masthead"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags="div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" mdatatype"http://schema.org/CreativeWork" /]
+						[begins tags="div" class="col col-12" mdatatype"http://schema.org/CreativeWork" /]
 							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue rounded-circle" /]
 									<meta itemprop="image" content="<?php echo $mypersonal_photo; ?>">
 							[begins tags='div' more='class="intro-text"' /]
@@ -992,7 +990,7 @@ if( $browser->isMobile() == true ){
 			[section id="information"]
 				[begins tags='div' class='containe' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_INFORMATION_HOME'); ?>[/h2]
 							[hr class="star-primary" /]
@@ -1008,7 +1006,7 @@ if( $browser->isMobile() == true ){
 			[section class="success" id="portfolios"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_PORTFOLIO_HOME'); ?>[/h2]
 							[hr class="star-light" /]
 						[ends tags="div" /]
@@ -1023,7 +1021,7 @@ if( $browser->isMobile() == true ){
 			[section id="download"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_DOWNLOAD_HOME'); ?>[/h2]
 							[hr class="star-primary" /]
 						[ends tags="div" /]
@@ -1038,7 +1036,7 @@ if( $browser->isMobile() == true ){
 			[section id="project" class="success"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_PROJECT_HOME'); ?>[/h2]
 							[hr class="star-light" /]
 						[ends tags="div" /]
@@ -1052,7 +1050,7 @@ if( $browser->isMobile() == true ){
 			[section id="translator"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_TRANSLATOR_HOME'); ?>[/h2]
 							[hr class="star-primary" /]
 						[ends tags="div" /]
@@ -1066,7 +1064,7 @@ if( $browser->isMobile() == true ){
 			[section class="success"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_SHOPPING_HOME')?>[/h2]
 							[hr class="star-light" /]
 						[ends tags="div" /]
@@ -1081,7 +1079,7 @@ if( $browser->isMobile() == true ){
 			[section id="payment"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_PAYMENTS_HOME')?>[/h2]
 							[hr class="star-primary" /]
 						[ends tags="div" /]
@@ -1096,14 +1094,14 @@ if( $browser->isMobile() == true ){
 			[section id="logs" class="success"]
 				[begins tags='div' class='container text-center' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_CONNEXION_HOME')?>[/h2]
 							[hr class="star-light" /]
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs4-login-left" style="none" />[ends tags="div" /]
-						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs4-login-right" style="none" />[ends tags="div" /]
+						[begins tags='div' class='col col-12 col-md-6' /]<jdoc:include type="modules" name="bs4-login-left" style="none" />[ends tags="div" /]
+						[begins tags='div' class='col col-12 col-md-6' /]<jdoc:include type="modules" name="bs4-login-right" style="none" />[ends tags="div" /]
 					[ends tags="div" /]
 				[ends tags="div" /]
 			[/section]	
@@ -1112,7 +1110,7 @@ if( $browser->isMobile() == true ){
 			[section id="contact"]
 				[begins tags='div' class='container-fluid' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_CONTACT_HOME'); ?>[/h2]
 							[hr class="star-primary" /]
 						[ends tags="div" /]
@@ -1132,16 +1130,16 @@ if( $browser->isMobile() == true ){
 					[ends tags="div" /]
 					[begins tags='div' more='class="row"' /]
 						<?php if ($this->countModules('bs4-footer1')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer1" style="none" />[ends tags="div" /]
+							[begins tags='div' class='col col-12 col-sm-6 col-md-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer1" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 						<?php if ($this->countModules('bs4-footer2')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer2" style="none" />[ends tags="div" /]
+							[begins tags='div' class='col col-12 col-sm-6 col-md-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer2" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 						<?php if ($this->countModules('bs4-footer3')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer3" style="none" />[ends tags="div" /]
+							[begins tags='div' class='col col-12 col-sm-6 col-md-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer3" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 						<?php if ($this->countModules('bs4-footer4')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer4" style="none" />[ends tags="div" /]
+							[begins tags='div' class='col col-12 col-sm-6 col-md-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer4" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 					[ends tags="div" /]
 				[ends tags="div" /]
@@ -1149,13 +1147,12 @@ if( $browser->isMobile() == true ){
 			[begins tags='div' class='footer-below' /]
 				[begins tags='div' class='container-fluid' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' mdatatype='http://schema.org/CreativeWork' /]
+						[begins tags='div' class='col col-12 text-center' mdatatype='http://schema.org/CreativeWork' /]
 						[fa name="mobile" zoom="5x" /] [fa name="tablet" zoom="5x" /] [fa name="laptop" zoom="5x" /] [fa name="desktop" zoom="5x" /][br /]
-					Nous sommes 100% amis avec les moteur de recherches et multiplateformes avec n'importe quelles choix de votre navigateur internet.[br /]
-							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - Toute reproduction interdite sans l'autorisation de l'auteur.. - Conception par [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] et WebDesigner par  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url][br /][br /]
+					
+							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - <?php echo JText::_('TPL_CVSTART_FOOTER_AUTHOR'); ?> - <?php echo JText::_('TPL_CVSTART_FOOTER_CONCEPT'); ?> [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] - <?php echo JText::_('TPL_CVSTART_FOOTER_DESIGN'); ?>  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url][br /][br /]
 							
-							Le nom Joomla!® est utilisé sous license limitée de Open Source Matters, le propriétaire mondial de la marque de commerce.[br /]
-							Alexon Balangue n'est ni affilié à Open Source Matters ou au projet Joomla!® ni approuvé par eux.
+							<?php echo JText::_('TPL_CVSTART_FOOTER_NOTICE'); ?>
 						[ends tags="div" /]	
 					[ends tags="div" /]	
 				[ends tags="div" /]	
@@ -1183,7 +1180,7 @@ if( $browser->isMobile() == true ){
 			[header class="masthead"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags="div" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" mdatatype"http://schema.org/CreativeWork" /]
+						[begins tags="div" class="col col-12" mdatatype"http://schema.org/CreativeWork" /]
 							[span mdataprop="primaryImageOfPage" class="sprites sprites-alexonbalangue rounded-circle" /]
 									<meta itemprop="image" content="<?php echo $mypersonal_photo; ?>">
 							[begins tags='div' more='class="intro-text"' /]
@@ -1233,7 +1230,7 @@ if( $browser->isMobile() == true ){
 			[section id="translator" class="success"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_TRANSLATOR_HOME'); ?>[/h2]
 							[hr class="star-light" /]
 						[ends tags="div" /]
@@ -1249,14 +1246,14 @@ if( $browser->isMobile() == true ){
 			[section id="logs"]
 				[begins tags='div' class='container text-center' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_CONNEXION_HOME'); ?>[/h2]
 							[hr class="star-primary" /]
 						[ends tags="div" /]
 					[ends tags="div" /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs4-login-left" style="none" />[ends tags="div" /]
-						[begins tags='div' class='col-xs-12 col-sm-6 col-md-6 col-lg-6' /]<jdoc:include type="modules" name="bs4-login-right" style="none" />[ends tags="div" /]
+						[begins tags='div' class='col col-12 col-md-6' /]<jdoc:include type="modules" name="bs4-login-left" style="none" />[ends tags="div" /]
+						[begins tags='div' class='col col-12 col-md-6' /]<jdoc:include type="modules" name="bs4-login-right" style="none" />[ends tags="div" /]
 					[ends tags="div" /]
 				[ends tags="div" /]
 			[/section]	
@@ -1265,7 +1262,7 @@ if( $browser->isMobile() == true ){
 			[section id="payment" class="success"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_PAYMENTS_HOME')?>[/h2]
 							[hr class="star-light" /]
 						[ends tags="div" /]
@@ -1280,7 +1277,7 @@ if( $browser->isMobile() == true ){
 			[section id="contact"]
 				[begins tags='div' class='container' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' /]
+						[begins tags='div' class='col col-12 text-center' /]
 							[h2 css='itemprop="headline"']<?php echo JText::_('TPL_CVSTART_CONTACT_HOME'); ?>[/h2]
 							[hr class="star-primary" /]
 						[ends tags="div" /]	
@@ -1300,16 +1297,16 @@ if( $browser->isMobile() == true ){
 					[ends tags="div" /]
 					[begins tags='div' more='class="row"' /]
 						<?php if ($this->countModules('bs4-footer1')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer1" style="none" />[ends tags="div" /]
+							[begins tags='div' class='col col-12 col-sm-6 col-md-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer1" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 						<?php if ($this->countModules('bs4-footer2')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer2" style="none" />[ends tags="div" /]
+							[begins tags='div' class='col col-12 col-sm-6 col-md-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer2" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 						<?php if ($this->countModules('bs4-footer3')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer3" style="none" />[ends tags="div" /]
+							[begins tags='div' class='col col-12 col-sm-6 col-md-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer3" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 						<?php if ($this->countModules('bs4-footer4')) : ?>
-							[begins tags='div' class='col-xs-12 col-sm-6 col-md-3 col-lg-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer4" style="none" />[ends tags="div" /]
+							[begins tags='div' class='col col-12 col-sm-6 col-md-3 footer-col' /]<jdoc:include type="modules" name="bs4-footer4" style="none" />[ends tags="div" /]
 						<?php endif; ?>	
 					[ends tags="div" /]
 				[ends tags="div" /]
@@ -1317,13 +1314,12 @@ if( $browser->isMobile() == true ){
 			[begins tags='div' class='footer-below' /]
 				[begins tags='div' class='container-fluid' /]
 					[begins tags='div' class='row' /]
-						[begins tags='div' class='col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center' mdatatype='http://schema.org/CreativeWork' /]
+						[begins tags='div' class='col col-12 text-center' mdatatype='http://schema.org/CreativeWork' /]
 						[fa name="mobile" zoom="5x" /] [fa name="tablet" zoom="5x" /] [fa name="laptop" zoom="5x" /] [fa name="desktop" zoom="5x" /][br /]
-					Nous sommes 100% amis avec les moteur de recherches et multiplateformes avec n'importe quelles choix de votre navigateur internet.[br /]
-							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - Toute reproduction interdite sans l'autorisation de l'auteur. - Conception par [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] et WebDesigner par  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url][br /][br /]
+					
+							<span itemprop="copyrightHolder">&copy; <a href="<?php echo JURI::base(); ?>"><?php echo $sitename; ?></a></span> - <span itemprop="copyrightYear"><?php echo date('Y'); ?></span> - <?php echo JText::_('TPL_CVSTART_FOOTER_AUTHOR'); ?>- <?php echo JText::_('TPL_CVSTART_FOOTER_CONCEPT'); ?> [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url] - <?php echo JText::_('TPL_CVSTART_FOOTER_DESIGN'); ?>  [url href="//www.startboostrap.com" target="_top"]www.Startboostrap.com[/url][br /][br /]
 							
-							Le nom Joomla!® est utilisé sous license limitée de Open Source Matters, le propriétaire mondial de la marque de commerce.[br /]
-							Alexon Balangue n'est ni affilié à Open Source Matters ou au projet Joomla!® ni approuvé par eux.
+							<?php echo JText::_('TPL_CVSTART_FOOTER_NOTICE'); ?>
 
 						[ends tags="div" /]	
 					[ends tags="div" /]	
@@ -1343,7 +1339,7 @@ if( $browser->isMobile() == true ){
 		[/section]
 		[footer] 
 			&copy; <?php echo date("Y").' '.$sitename; ?> - 
-			Conception by [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url]  
+			<?php echo JText::_('TPL_CVSTART_FOOTER_CONCEPT'); ?> [url href="//www.AlexonBalangue.me" target="_top"]www.AlexonBalangue.me[/url]  
 		[/footer]
 	<?php break; endswitch; ?>	
 		<?php if ($this->countModules('referencer')) : ?><jdoc:include type="modules" name="referencer" style="none" /><?php endif; ?>	
