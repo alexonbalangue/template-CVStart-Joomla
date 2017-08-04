@@ -37,6 +37,6 @@ extract($displayData);
 		<button type="button" class="close novalidate" data-dismiss="modal">×</button>
 	<?php endif; ?>
 	<?php if (isset($params['title'])) : ?>
-		<h3><?php echo $params['title']; ?></h3>
+		<h3 class="display-3"><?php echo $params['title']; ?></h3>
 	<?php endif; ?>
 </div>

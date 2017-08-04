@@ -18,6 +18,5 @@ $btnClass = $displayData['btnClass'];
 
 ?>
 <button onclick="<?php echo $doTask; ?>" class="<?php echo $btnClass; ?>">
-	<span class="<?php echo trim($class); ?>"></span>
-	<?php echo $text; ?>
+	<i class="<?php echo trim($class); ?>"></i> <?php echo $text; ?>
 </button>

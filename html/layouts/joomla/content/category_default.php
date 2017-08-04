@@ -31,13 +31,13 @@ $tagsData = $displayData->get('category')->tags->itemTags;
 
 	<div class="<?php echo $displayData->pageclass_sfx;?>">
 		<?php if ($params->get('show_page_heading')) : ?>
-			<h1>
+			<h1 class="display-5">
 				<?php echo $displayData->escape($params->get('page_heading')); ?>
 			</h1>
 		<?php endif; ?>
 
 		<?php if ($params->get('show_category_title', 1)) : ?>
-			<h2>
+			<h2 class="display-5">
 				<?php echo JHtml::_('content.prepare', $displayData->get('category')->title, '', $extension . '.category.title'); ?>
 			</h2>
 		<?php endif; ?>

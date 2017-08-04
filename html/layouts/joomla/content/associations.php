@@ -12,9 +12,9 @@ defined('JPATH_BASE') or die;
 $items = $displayData;
 
 if (!empty($items)) : ?>
-	<ul>
+	<ul class="list-inline">
 		<?php foreach ($items as $id => $item) : ?>
-				<li>
+				<li class="list-inline-item">
 					<?php echo $item->link; ?>
 				</li>
 		<?php endforeach; ?>

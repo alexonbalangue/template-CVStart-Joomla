@@ -16,7 +16,7 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers/html');
 ?>
 
 	<?php if ($params->get('show_title') || $displayData->state == 0 || ($params->get('show_author') && !empty($displayData->author ))) : ?>
-		<div class="page-header">
+		<div class="display-5">
 
 			<?php if ($params->get('show_title')) : ?>
 				<h2 itemprop="name">

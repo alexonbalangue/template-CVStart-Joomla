@@ -11,7 +11,7 @@ defined('JPATH_BASE') or die;
 
 ?>
 <?php if ($displayData->params->get('show_page_heading')) : ?>
-<h1>
+<h1 class="display-5">
 	<?php echo $displayData->escape($displayData->params->get('page_heading')); ?>
 </h1>
 <?php endif; ?>

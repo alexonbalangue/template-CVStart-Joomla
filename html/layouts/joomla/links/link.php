@@ -18,6 +18,6 @@ $text    = empty($displayData['text']) ? '' : ('<span>' . $displayData['text'] .
 ?>
 <li<?php echo $id; ?>>
 	<a class="btn btn-link" href="<?php echo JFilterOutput::ampReplace($displayData['link']); ?>"<?php echo $target . $onclick . $title; ?>>
-		<span class="fa fa-<?php echo $displayData['image']; ?>"></span> <?php echo $text; ?>
+		<i class="fa fa-<?php echo $displayData['image']; ?>"></i> <?php echo $text; ?>
 	</a>
 </li>

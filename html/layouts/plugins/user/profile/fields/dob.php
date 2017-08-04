@@ -16,5 +16,5 @@ extract($displayData);
 
 ?>
 </div></div>
-<div class="controls"><?php echo $text; ?></div>
-<div class="control-group"><div class="control-label">
+<div class="form-control"><?php echo $text; ?></div>
+<div class="form-group"><div class="form-control-label">

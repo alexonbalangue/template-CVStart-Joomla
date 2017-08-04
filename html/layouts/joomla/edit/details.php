@@ -18,7 +18,7 @@ $title = $displayData->getForm()->getValue('title');
 $published = $displayData->getForm()->getField('published');
 $saveHistory = $displayData->get('state')->get('params')->get('save_history', 0);
 ?>
-<div class="col-md-2">
+<div class="col col-12 col-md-2">
 	<h4><?php echo JText::_('JDETAILS'); ?></h4>
 	<hr />
 		<?php if (empty($title)) : ?>

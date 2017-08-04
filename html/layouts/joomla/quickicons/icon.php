@@ -18,7 +18,7 @@ $text    = empty($displayData['text']) ? '' : ('<span>' . $displayData['text'] .
 ?>
 <div class="row">
 	<div class="container-fluid"<?php echo $id; ?>>
-		<div class="col-md-12">
+		<div class=" col col-12">
 			<a href="<?php echo $displayData['link']; ?>"<?php echo $target . $onclick . $title; ?>>
 				<span class="fa fa-<?php echo $displayData['image']; ?>"></span> <?php echo $text; ?>
 			</a>

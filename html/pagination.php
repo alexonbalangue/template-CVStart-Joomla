@@ -112,7 +112,7 @@ function pagination_list_render($list)
 		}
 	}
 
-	$html = '<ul class="pagination pagination-lg">';
+	$html = '<ul class="pagination">';
 	$html .= $list['start']['data'];
 	$html .= $list['previous']['data'];
 
@@ -177,7 +177,7 @@ function pagination_item_active(&$item)
 	if (!isset($display))
 	{
 		$display = $item->text;
-		$class   = ' class="page-item hidden-xs-down"';
+		$class   = ' class="page-item hidden-xs-up"';
 	}
 
 	return '<li' . $class . '><a title="' . $item->text . '" href="' . $item->link . '" class="page-link">' . $display . '</a></li>';

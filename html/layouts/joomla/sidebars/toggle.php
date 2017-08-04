@@ -15,7 +15,7 @@ JText::script('JTOGGLE_SHOW_SIDEBAR');
 ?>
 <div
 	id="j-toggle-sidebar-button"
-	class="hidden-phone hasTooltip"
+	class="hidden-xs-up hasTooltip"
 	type="button"
 	onclick="toggleSidebar(false); return false;"
 	>
